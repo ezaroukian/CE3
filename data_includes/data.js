@@ -10,7 +10,7 @@ var shuffleSequence = seq(rshuffle(rshuffle(
 "11-11n31_r_2P_isn","13-11n31_o_2P_can","31-11n31_o_2P_can","33-11n31_r_2P_isn",
 "11-1xn3x_u_2P2B_dif","13-1xn3x_u_2P2B_dif",
 "31-x1nx3_u_2B2P_can","33-x1nx3_u_2B2P_can",
-"11-x3nx1_o_2B2P_dif","31-x3nx1_r_2B2P_dif",
+"11-x3nx1_o_2B2P_isn","31-x3nx1_r_2B2P_dif",
 "13-3xn1x_o_2P2B_can","33-3xn1x_r_2P2B_isn"
   )));
 
