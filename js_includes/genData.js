@@ -221,7 +221,7 @@ var ontoList = [
 //Turn them into items for IBEX
 function ibexItem(onto,CErule){
 	var type = onto.type+"-"+CErule.type;//
-	var image = "<img src='"+onto.link+" width='480' height='360' >";//html containing ontograph link on google drive? test with http://tinyurl.com/ohleh6j
+	var image = "<img src='"+onto.link+" width='480' height='360' ><img src='"+onto.link+" width='480' height='360' >";//html containing ontograph link on google drive? test with http://tinyurl.com/ohleh6j
 	var quest = CErule.rule+"<br>"+image+"<br><br><br>Is the diagram consistent with the rule?";
 	var ans = ["Yes","No"];	
 	var cor = 1;
