@@ -35,17 +35,17 @@ switch(neg){
 
 var parts = [P1B1,P1B2,P2B1,P2B2,P1nB1,P1nB2,P2nB1,P2nB2,P2iP1,B2iB1,P2nP1,B2nB1];
 
-function buildCE(form, order, multi){
+function buildCE(form, order, multi, neg){
 	var conj1 = "error1";
 	var conj2 = "error2";
 	var cons = "error";
 	
 	//for different negation
-	var neg = "cannot";//make input to function, add to item
+	//var neg = "cannot";//make input to function, add to item
 	switch(neg){
-		case "cannot":
+		case "can":
 			break;
-		case "isnot":
+		case "isn":
 			P1nB1 = "the person P1 does not read the book B1";
 			P1nB2 = "the person P1 does not read the book B2";	
 			P2nB1 = "the person P2 does not read the book B1";	
@@ -53,7 +53,7 @@ function buildCE(form, order, multi){
 			P2nP1 = "the person P2 is not the person P1";
 			B2nB1 = "the book B2 is not the book B1";
 			break;
-		case "diff":	
+		case "dif":	
 			P2nP1 = "there is a person named P2 that is different to the person P1";
 			B2nB1 = "there is a book named B2 that is different to the book B1";
 			break;
@@ -173,32 +173,32 @@ function buildCE(form, order, multi){
 	//3xn1x 2P2B: P1B1 / P2nP1, P2B2
 	
 	
-	return {type: form+"_"+order+"_"+multi, rule: "if ( "+conj1+" ) and ( "+conj2+" ) then ( "+cons+" )."};
+	return {type: form+"_"+order+"_"+multi+"_"+neg, rule: "if ( "+conj1+" ) and ( "+conj2+" ) then ( "+cons+" )."};
 }
 
 
+//neg added superficially
+var ce11n13_nn_o_2B = buildCE("11n13","o","2B", "can");
+var ce11n13_nn_r_2B = buildCE("11n13","r","2B", "isn");
 
-var ce11n13_nn_o_2B = buildCE("11n13","o","2B");
-var ce11n13_nn_r_2B = buildCE("11n13","r","2B");
+var ce13n11_np_o_2B = buildCE("13n11","o","2B", "dif");
+var ce13n11_np_r_2B = buildCE("13n11","r","2B", "can");
 
-var ce13n11_np_o_2B = buildCE("13n11","o","2B");
-var ce13n11_np_r_2B = buildCE("13n11","r","2B");
+var ce31n11_np_o_2P = buildCE("31n11","o","2P", "isn");
+var ce31n11_np_r_2P = buildCE("31n11","r","2P", "dif");
 
-var ce31n11_np_o_2P = buildCE("31n11","o","2P");
-var ce31n11_np_r_2P = buildCE("31n11","r","2P");
+var ce11n31_nn_o_2P = buildCE("11n31","o","2P", "can");
+var ce11n31_nn_r_2P = buildCE("11n31","r","2P", "isn");
 
-var ce11n31_nn_o_2P = buildCE("11n31","o","2P");
-var ce11n31_nn_r_2P = buildCE("11n31","r","2P");
+var ce1xn3x_pp_u_2P2B = buildCE("1xn3x","u","2P2B", "dif");
 
-var ce1xn3x_pp_u_2P2B = buildCE("1xn3x","u","2P2B");
+var cex1nx3_pp_u_2B2P = buildCE("x1nx3","u","2B2P", "can");
 
-var cex1nx3_pp_u_2B2P = buildCE("x1nx3","u","2B2P");
+var cex3nx1_np_o_2B2P = buildCE("x3nx1","o","2B2P", "isn");
+var cex3nx1_np_r_2B2P = buildCE("x3nx1","r","2B2P", "dif");
 
-var cex3nx1_np_o_2B2P = buildCE("x3nx1","o","2B2P");
-var cex3nx1_np_r_2B2P = buildCE("x3nx1","r","2B2P");
-
-var ce3xn1x_np_o_2P2B = buildCE("3xn1x","o","2P2B");
-var ce3xn1x_np_r_2P2B = buildCE("3xn1x","r","2P2B");
+var ce3xn1x_np_o_2P2B = buildCE("3xn1x","o","2P2B", "can");
+var ce3xn1x_np_r_2P2B = buildCE("3xn1x","r","2P2B", "isn");
 
 //(hopefully) all the CE rules
 var CErulesList = [
