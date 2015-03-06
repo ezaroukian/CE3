@@ -39,9 +39,7 @@ function buildCE(form, order, multi, neg){
 	var conj1 = "error1";
 	var conj2 = "error2";
 	var cons = "error";
-	
-	//for different negation
-	//var neg = "cannot";//make input to function, add to item
+
 	switch(neg){
 		case "can":
 			break;
@@ -58,8 +56,6 @@ function buildCE(form, order, multi, neg){
 			B2nB1 = "there is a book named B2 that is different to the book B1";
 			break;
 	}
-	
-	
 	
 	switch(form){
 		case "11n13"://11n13 2B: P1B1 / B2nB1, P1nB2 
