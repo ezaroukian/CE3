@@ -265,7 +265,7 @@ function ibexItemsList(ontoList,CErulesList){
 			//alert(output);
 		}
 	}
-	//alert(output);
+	alert(output);
 	return output;
 }
 
