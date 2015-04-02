@@ -50,9 +50,11 @@ var items = [
         normalMessage: "<div align='center'><p><i>Press any key to continue.</i></p><p><i>Remember to respond as <b>quickly</b> and as <b>accurately</b> as possible.</i></p></div>",
         ignoreFailure: true
     }],
-    ["inst", "Message", {
-        html: {include: "survey.html"},
-    }],
+    ["inst", "Form", {
+        html: { include: "survey.html" },
+        hideProgressBar: true,
+        //countsForProgressBar: false,
+    } ],
     ["inst", "Message", {
         html: {include: "gen_instructions1.html"},
     }],
