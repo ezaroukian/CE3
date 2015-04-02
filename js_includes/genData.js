@@ -174,29 +174,33 @@ function buildCE(form, order, multi, neg){
 
 
 //neg added superficially
-var ce11n13_nn_o_2B = buildCE("11n13","o","2B", "can");
-var ce11n13_nn_r_2B = buildCE("11n13","r","2B", "isn");
+/* var ce11n13_nn_o_2B_can = buildCE("11n13","o","2B", "can");
+var ce11n13_nn_r_2B_isn = buildCE("11n13","r","2B", "isn");
 
-var ce13n11_np_o_2B = buildCE("13n11","o","2B", "dif");
-var ce13n11_np_r_2B = buildCE("13n11","r","2B", "can");
+var ce13n11_np_o_2B_dif = buildCE("13n11","o","2B", "dif");
+var ce13n11_np_r_2B_can = buildCE("13n11","r","2B", "can");
 
-var ce31n11_np_o_2P = buildCE("31n11","o","2P", "isn");
-var ce31n11_np_r_2P = buildCE("31n11","r","2P", "dif");
+var ce31n11_np_o_2P_isn = buildCE("31n11","o","2P", "isn");
+var ce31n11_np_r_2P_dif = buildCE("31n11","r","2P", "dif");
 
-var ce11n31_nn_o_2P = buildCE("11n31","o","2P", "can");
-var ce11n31_nn_r_2P = buildCE("11n31","r","2P", "isn");
+var ce11n31_nn_o_2P_can = buildCE("11n31","o","2P", "can");
+var ce11n31_nn_r_2P_isn = buildCE("11n31","r","2P", "isn");
 
-var ce1xn3x_pp_u_2P2B = buildCE("1xn3x","u","2P2B", "dif");
+var ce1xn3x_pp_u_2P2B_dif = buildCE("1xn3x","u","2P2B", "dif");
 
-var cex1nx3_pp_u_2B2P = buildCE("x1nx3","u","2B2P", "can");
+var cex1nx3_pp_u_2B2P_can = buildCE("x1nx3","u","2B2P", "can");
 
-var cex3nx1_np_o_2B2P = buildCE("x3nx1","o","2B2P", "isn");
-var cex3nx1_np_r_2B2P = buildCE("x3nx1","r","2B2P", "dif");
+var cex3nx1_np_o_2B2P_isn = buildCE("x3nx1","o","2B2P", "isn");
+var cex3nx1_np_r_2B2P_dif = buildCE("x3nx1","r","2B2P", "dif");
 
-var ce3xn1x_np_o_2P2B = buildCE("3xn1x","o","2P2B", "can");
-var ce3xn1x_np_r_2P2B = buildCE("3xn1x","r","2P2B", "isn");
+var ce3xn1x_np_o_2P2B_can = buildCE("3xn1x","o","2P2B", "can");
+var ce3xn1x_np_r_2P2B_isn = buildCE("3xn1x","r","2P2B", "isn"); */
 
-//(hopefully) all the CE rules
+
+
+
+
+/* //(hopefully) all the CE rules
 var CErulesList = [
  ce11n13_nn_o_2B, ce11n13_nn_r_2B, 
  ce13n11_np_o_2B, ce13n11_np_r_2B, 
@@ -206,7 +210,36 @@ var CErulesList = [
  cex1nx3_pp_u_2B2P,
  cex3nx1_np_o_2B2P, cex3nx1_np_r_2B2P,
  ce3xn1x_np_o_2P2B, ce3xn1x_np_r_2P2B
-];
+];  */
+
+var CErulesList2 = [];
+
+var diffs = ["can","isn","dif"];
+for (i=0;i<diffs.length;i++){
+	CErulesList2.push(	buildCE("11n13","o","2B", diffs[i]) );
+	CErulesList2.push(	buildCE("11n13","r","2B", diffs[i]) );
+
+	CErulesList2.push(	buildCE("13n11","o","2B", diffs[i]) );
+	CErulesList2.push(	buildCE("13n11","r","2B", diffs[i]) );
+
+	CErulesList2.push(	buildCE("31n11","o","2P", diffs[i]) );
+	CErulesList2.push(	buildCE("31n11","r","2P", diffs[i]) );
+
+	CErulesList2.push(	buildCE("11n31","o","2P", diffs[i]) );
+	CErulesList2.push(	buildCE("11n31","r","2P", diffs[i]) );
+
+	CErulesList2.push(	buildCE("1xn3x","u","2P2B", diffs[i]) );
+
+	CErulesList2.push(	buildCE("x1nx3","u","2B2P", diffs[i]) );
+
+	CErulesList2.push(	buildCE("x3nx1","o","2B2P", diffs[i]) );
+	CErulesList2.push(	buildCE("x3nx1","r","2B2P", diffs[i]) );
+
+	CErulesList2.push(	buildCE("3xn1x","o","2P2B", diffs[i]) );
+	CErulesList2.push(	buildCE("3xn1x","r","2P2B", diffs[i]) );
+} 
+
+
 
 
 var tempLink = "http://i1341.photobucket.com/albums/o753/ezaroukian/11_zpsatl1xhmu.png";
@@ -216,7 +249,7 @@ var ontoList = [
 {type: "13", link: "http://i1341.photobucket.com/albums/o753/ezaroukian/13_zpslqb6lf25.png"},
 {type: "31", link: "http://i1341.photobucket.com/albums/o753/ezaroukian/31_zpss87hqnkb.png"},
 {type: "33", link: "http://i1341.photobucket.com/albums/o753/ezaroukian/33_zpsy18d3v6x.png"}
-];
+]; 
 
 //Turn them into items for IBEX
 function ibexItem(onto,CErule){
@@ -274,10 +307,57 @@ function wrapper(){
 }
 
 
+// function modifyRunningOrder(ro){
+	randomly pick between the 3 orders for Latin square
+	
+	// return ;
+// }//or have shuffleSequence call a function
+
+function genSeq(){
+	var cid = seq("inst",sepWith("sep",rshuffle(rshuffle(
+"11-11n13_o_2B_can","13-11n13_o_2B_can","31-11n13_r_2B_isn","33-11n13_r_2B_isn",
+"11-13n11_r_2B_can","13-13n11_r_2B_can","31-13n11_o_2B_dif","33-13n11_o_2B_dif",
+"11-31n11_o_2P_isn","13-31n11_r_2P_dif","31-31n11_r_2P_dif","33-31n11_o_2P_isn",
+"11-11n31_r_2P_isn","13-11n31_o_2P_can","31-11n31_o_2P_can","33-11n31_r_2P_isn",
+"11-1xn3x_u_2P2B_dif","13-1xn3x_u_2P2B_dif",
+"31-x1nx3_u_2B2P_can","33-x1nx3_u_2B2P_can",
+"11-x3nx1_o_2B2P_isn","31-x3nx1_r_2B2P_dif",
+"13-3xn1x_o_2P2B_can","33-3xn1x_r_2P2B_dif"
+  )));
+  
+  var idc = seq("inst",sepWith("sep",rshuffle(rshuffle(
+"11-11n13_o_2B_isn","13-11n13_o_2B_isn","31-11n13_r_2B_dif","33-11n13_r_2B_dif",
+"11-13n11_r_2B_isn","13-13n11_r_2B_isn","31-13n11_o_2B_can","33-13n11_o_2B_can",
+"11-31n11_o_2P_dif","13-31n11_r_2P_can","31-31n11_r_2P_can","33-31n11_o_2P_dif",
+"11-11n31_r_2P_dif","13-11n31_o_2P_isn","31-11n31_o_2P_isn","33-11n31_r_2P_dif",
+"11-1xn3x_u_2P2B_can","13-1xn3x_u_2P2B_can",
+"31-x1nx3_u_2B2P_isn","33-x1nx3_u_2B2P_isn",
+"11-x3nx1_o_2B2P_dif","31-x3nx1_r_2B2P_can",
+"13-3xn1x_o_2P2B_isn","33-3xn1x_r_2P2B_can"
+  )));
+  
+    var dci = seq("inst",sepWith("sep",rshuffle(rshuffle(
+"11-11n13_o_2B_dif","13-11n13_o_2B_dif","31-11n13_r_2B_can","33-11n13_r_2B_can",
+"11-13n11_r_2B_dif","13-13n11_r_2B_dif","31-13n11_o_2B_isn","33-13n11_o_2B_isn",
+"11-31n11_o_2P_can","13-31n11_r_2P_isn","31-31n11_r_2P_isn","33-31n11_o_2P_can",
+"11-11n31_r_2P_can","13-11n31_o_2P_dif","31-11n31_o_2P_dif","33-11n31_r_2P_can",
+"11-1xn3x_u_2P2B_isn","13-1xn3x_u_2P2B_isn",
+"31-x1nx3_u_2B2P_dif","33-x1nx3_u_2B2P_dif",
+"11-x3nx1_o_2B2P_can","31-x3nx1_r_2B2P_isn",
+"13-3xn1x_o_2P2B_dif","33-3xn1x_r_2P2B_isn"
+   )));
+   
+  var newOrd = Math.floor((Math.random() * 3)); 
+  var options = [cid,idc,dci];
+  
+  return options[newOrd];
+};
+
+
 //for testing in browser
 document.getElementById("test").innerHTML = "running...";  
 
-document.getElementById("textDiv1").innerHTML = CErulesList;		 
-document.getElementById("textDiv2").innerHTML = ce11n13_nn_r_2B.rule ;
-document.getElementById("textDiv3").innerHTML = ibexItem(ontoList[0],CErulesList[0]);
-document.getElementById("textDiv4").innerHTML = ibexItemsList(ontoList,CErulesList);
+document.getElementById("textDiv1").innerHTML = CErulesList2;		 
+//document.getElementById("textDiv2").innerHTML = ce11n13_nn_r_2B.rule ;
+document.getElementById("textDiv3").innerHTML = ibexItem(ontoList[0],CErulesList2[0]);
+document.getElementById("textDiv4").innerHTML = ibexItemsList(ontoList,CErulesList2);
