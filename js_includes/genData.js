@@ -308,7 +308,7 @@ function wrapper(){
 
 
 
-/*
+
 function genSeq(){
 	var cid = seq("inst",sepWith("sep",rshuffle(rshuffle(
 		"11-11n13_o_2B_can","13-11n13_o_2B_can","31-11n13_r_2B_isn","33-11n13_r_2B_isn",
@@ -347,7 +347,7 @@ function genSeq(){
   var options = [cid,idc,dci];
   
   return options[newOrd];
-}*/
+}
 
 
 //for testing in browser
