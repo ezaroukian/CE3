@@ -344,6 +344,7 @@ function genSeq(){
    		))));
    
 	var newOrd = Math.floor((Math.random() * 3)); 
+	alert(newOrd);
 	var options = [cid,idc,dci];
 	  
 	return options[newOrd];
