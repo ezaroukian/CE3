@@ -311,37 +311,37 @@ function wrapper(){
 /*
 function genSeq(){
 	var cid = seq("inst",sepWith("sep",rshuffle(rshuffle(
-"11-11n13_o_2B_can","13-11n13_o_2B_can","31-11n13_r_2B_isn","33-11n13_r_2B_isn",
-"11-13n11_r_2B_can","13-13n11_r_2B_can","31-13n11_o_2B_dif","33-13n11_o_2B_dif",
-"11-31n11_o_2P_isn","13-31n11_r_2P_dif","31-31n11_r_2P_dif","33-31n11_o_2P_isn",
-"11-11n31_r_2P_isn","13-11n31_o_2P_can","31-11n31_o_2P_can","33-11n31_r_2P_isn",
-"11-1xn3x_u_2P2B_dif","13-1xn3x_u_2P2B_dif",
-"31-x1nx3_u_2B2P_can","33-x1nx3_u_2B2P_can",
-"11-x3nx1_o_2B2P_isn","31-x3nx1_r_2B2P_dif",
-"13-3xn1x_o_2P2B_can","33-3xn1x_r_2P2B_dif"
-  )));
+		"11-11n13_o_2B_can","13-11n13_o_2B_can","31-11n13_r_2B_isn","33-11n13_r_2B_isn",
+		"11-13n11_r_2B_can","13-13n11_r_2B_can","31-13n11_o_2B_dif","33-13n11_o_2B_dif",
+		"11-31n11_o_2P_isn","13-31n11_r_2P_dif","31-31n11_r_2P_dif","33-31n11_o_2P_isn",
+		"11-11n31_r_2P_isn","13-11n31_o_2P_can","31-11n31_o_2P_can","33-11n31_r_2P_isn",
+		"11-1xn3x_u_2P2B_dif","13-1xn3x_u_2P2B_dif",
+		"31-x1nx3_u_2B2P_can","33-x1nx3_u_2B2P_can",
+		"11-x3nx1_o_2B2P_isn","31-x3nx1_r_2B2P_dif",
+		"13-3xn1x_o_2P2B_can","33-3xn1x_r_2P2B_dif"
+  		)));
   
   var idc = seq("inst",sepWith("sep",rshuffle(rshuffle(
-"11-11n13_o_2B_isn","13-11n13_o_2B_isn","31-11n13_r_2B_dif","33-11n13_r_2B_dif",
-"11-13n11_r_2B_isn","13-13n11_r_2B_isn","31-13n11_o_2B_can","33-13n11_o_2B_can",
-"11-31n11_o_2P_dif","13-31n11_r_2P_can","31-31n11_r_2P_can","33-31n11_o_2P_dif",
-"11-11n31_r_2P_dif","13-11n31_o_2P_isn","31-11n31_o_2P_isn","33-11n31_r_2P_dif",
-"11-1xn3x_u_2P2B_can","13-1xn3x_u_2P2B_can",
-"31-x1nx3_u_2B2P_isn","33-x1nx3_u_2B2P_isn",
-"11-x3nx1_o_2B2P_dif","31-x3nx1_r_2B2P_can",
-"13-3xn1x_o_2P2B_isn","33-3xn1x_r_2P2B_can"
-  )));
+		"11-11n13_o_2B_isn","13-11n13_o_2B_isn","31-11n13_r_2B_dif","33-11n13_r_2B_dif",
+		"11-13n11_r_2B_isn","13-13n11_r_2B_isn","31-13n11_o_2B_can","33-13n11_o_2B_can",
+		"11-31n11_o_2P_dif","13-31n11_r_2P_can","31-31n11_r_2P_can","33-31n11_o_2P_dif",
+		"11-11n31_r_2P_dif","13-11n31_o_2P_isn","31-11n31_o_2P_isn","33-11n31_r_2P_dif",
+		"11-1xn3x_u_2P2B_can","13-1xn3x_u_2P2B_can",
+		"31-x1nx3_u_2B2P_isn","33-x1nx3_u_2B2P_isn",
+		"11-x3nx1_o_2B2P_dif","31-x3nx1_r_2B2P_can",
+		"13-3xn1x_o_2P2B_isn","33-3xn1x_r_2P2B_can"
+		)));
   
     var dci = seq("inst",sepWith("sep",rshuffle(rshuffle(
-"11-11n13_o_2B_dif","13-11n13_o_2B_dif","31-11n13_r_2B_can","33-11n13_r_2B_can",
-"11-13n11_r_2B_dif","13-13n11_r_2B_dif","31-13n11_o_2B_isn","33-13n11_o_2B_isn",
-"11-31n11_o_2P_can","13-31n11_r_2P_isn","31-31n11_r_2P_isn","33-31n11_o_2P_can",
-"11-11n31_r_2P_can","13-11n31_o_2P_dif","31-11n31_o_2P_dif","33-11n31_r_2P_can",
-"11-1xn3x_u_2P2B_isn","13-1xn3x_u_2P2B_isn",
-"31-x1nx3_u_2B2P_dif","33-x1nx3_u_2B2P_dif",
-"11-x3nx1_o_2B2P_can","31-x3nx1_r_2B2P_isn",
-"13-3xn1x_o_2P2B_dif","33-3xn1x_r_2P2B_isn"
-   )));
+		"11-11n13_o_2B_dif","13-11n13_o_2B_dif","31-11n13_r_2B_can","33-11n13_r_2B_can",
+		"11-13n11_r_2B_dif","13-13n11_r_2B_dif","31-13n11_o_2B_isn","33-13n11_o_2B_isn",
+		"11-31n11_o_2P_can","13-31n11_r_2P_isn","31-31n11_r_2P_isn","33-31n11_o_2P_can",
+		"11-11n31_r_2P_can","13-11n31_o_2P_dif","31-11n31_o_2P_dif","33-11n31_r_2P_can",
+		"11-1xn3x_u_2P2B_isn","13-1xn3x_u_2P2B_isn",
+		"31-x1nx3_u_2B2P_dif","33-x1nx3_u_2B2P_dif",
+		"11-x3nx1_o_2B2P_can","31-x3nx1_r_2B2P_isn",
+		"13-3xn1x_o_2P2B_dif","33-3xn1x_r_2P2B_isn"
+   		)));
    
   var newOrd = Math.floor((Math.random() * 3)); 
   var options = [cid,idc,dci];
