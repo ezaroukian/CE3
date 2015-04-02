@@ -12,7 +12,7 @@ var shuffleSequence = seq("inst",sepWith("sep",rshuffle(rshuffle(
 "31-x1nx3_u_2B2P_can","33-x1nx3_u_2B2P_can",
 "11-x3nx1_o_2B2P_isn","31-x3nx1_r_2B2P_dif",
 "13-3xn1x_o_2P2B_can","33-3xn1x_r_2P2B_dif"
-  )));
+  ))));
 //genSeq();
 
 var defaults = [
