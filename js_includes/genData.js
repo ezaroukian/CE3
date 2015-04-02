@@ -307,11 +307,7 @@ function wrapper(){
 }
 
 
-// function modifyRunningOrder(ro){
-	randomly pick between the 3 orders for Latin square
-	
-	// return ;
-// }//or have shuffleSequence call a function
+
 /*
 function genSeq(){
 	var cid = seq("inst",sepWith("sep",rshuffle(rshuffle(
