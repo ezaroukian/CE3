@@ -303,7 +303,7 @@ function ibexItemsList(ontoList,CErulesList){
 }
 
 function wrapper(){
-	return ibexItemsList(ontoList,CErulesList);
+	return ibexItemsList(ontoList,CErulesList2);
 }
 
 
