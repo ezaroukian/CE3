@@ -18,6 +18,8 @@ jqueryWidget: {
         this.transfer = dget(this.options, "transfer", "keypress");
         assert(this.transfer == "keypress" || typeof(this.transfer) == "number",
                "Value of 'transfer' option of Separator must either be the string 'keypress' or a number");
+		this.continueMessage = dget(this.options, "continueMessage", "Click here to continue");
+
 
         var normal_message = dget(this.options, "normalMessage", "Press any key to continue.");
         var x = this.utils.getValueFromPreviousElement("normalMessage");
