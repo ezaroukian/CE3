@@ -86,7 +86,9 @@ var items = [
 	["inst", "SeparatorHTML", {
         transfer: "keypress",
         normalMessage: "Correct!",
-        errorMessage: "Incorrect! Because...",
+        errorMessage: "Incorrect! <br> The rule was 'if (the person P1 reads the book B1) then (the book B1 has as name Moby-Dick)'.<br> In the diagram, there are two person-book pairs. When P1 is Mary, B1 is Moby-Dick. BUT when P1 is John, B1 is War and Peace! <img src='http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png' height='360'>",
+		hideProgressBar: true,
+        countsForProgressBar: false,
     }],
     ["inst", "Message", {
         html: {include: "gen_instructions-end.html"},
