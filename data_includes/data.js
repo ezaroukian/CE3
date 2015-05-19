@@ -42,11 +42,6 @@ var defaults = [
 ];
 
 var items = [
-    ["inst", "MySeparator", {
-        q: "TESTING the person Mary reads the book Moby-Dick.<br><img src='http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png' height='360'><br>Is the diagram consistent with the rule?",
-        as: ["Yes","No"], hasCorrect: "Yes",
-        html: {include: "gen_instructions2.html"},
-    }],
     ["sep", "SeparatorHTML", {
         transfer: "keypress",
         normalMessage: "<div align='center'><p><i>Press any key to continue.</i></p><p><i>Remember to respond as <b>quickly</b> and as <b>accurately</b> as possible.</i></p></div>",
@@ -65,6 +60,12 @@ var items = [
         as: ["Yes","No"], hasCorrect: "Yes",
         html: {include: "gen_instructions2.html"},
 
+    }],
+	["inst", "MySeparator", {
+        q: "TESTING the person Mary reads the book Moby-Dick.<br><img src='http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png' height='360'><br>Is the diagram consistent with the rule?",
+        as: ["Yes","No"], hasCorrect: "Yes",
+        html: {include: "gen_instructions2.html"},
+		errorMessage: '<h2 style="color:red">Incorrect!</h2> <p> The rule was "the person Mary reads the book Moby-Dick".</p><p> In the diagram, Mary reads Moby-Dick</p> <img src="http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png" height="360">',
     }],
 	["inst", "SeparatorHTML", {
         errorMessage: '<h2 style="color:red">Incorrect!</h2> <p> The rule was "the person Mary reads the book Moby-Dick".</p><p> In the diagram, Mary reads Moby-Dick</p> <img src="http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png" height="360">',
