@@ -103,7 +103,7 @@ var items = [
 	["inst", "SeparatorHTML", {
         transfer: "keypress",
         normalMessage: "Correct!",
-        errorMessage: '<p style="color:red">Incorrect!</p><p> The rule was "if (the person P1 reads the book B1) then (the person P1 has as name Mary)".</p><p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When P1 = John and B1 = War and Peace, the rule requires P1 = Mary. - Inconsistent with rule!</li><li>When P1 = Mary and B1 = Moby-Dick, the rule requires P1 = Mary. - Consistent with rule. </li> </ol></p>  <img src="http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png" height="360">',
+        errorMessage: '<p style="color:red">Incorrect!</p><p> The rule was "if (the person P1 reads the book B1) then (the person P1 has as name Mary)".</p><p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When P1 = John and B1 = War and Peace, the rule requires P1 = Mary. - Inconsistent with rule!</li><li>When P1 = Mary and B1 = Moby-Dick, the rule requires P1 = Mary. - Consistent with rule. </li> </ol></p>  <img src="http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png" height="360">',
 		hideProgressBar: true,
         countsForProgressBar: false,
     }], 
