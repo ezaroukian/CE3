@@ -14,7 +14,7 @@ var defaults = [
   "SeparatorHTML", {
     transfer: "keypress",
     normalMessage: "<h2>Correct!</h2>",
-    errorMessage: "Wrong. Please wait for the next statement.",
+    errorMessage: "<h2 style='color:red'>Incorrect!</h2>",
 	hideProgressBar: true,
     countsForProgressBar: false,
   },
@@ -59,7 +59,7 @@ var items = [
         countsForProgressBar: false,
     }],
 	["inst", "SeparatorHTML", {
-        errorMessage: '<p style="color:red">Incorrect!</p><p> The rule was "the person Mary reads the book Moby-Dick".</p><p> In the diagram, Mary reads Moby-Dick</p> <img src="http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png" height="360">',
+        errorMessage: errorMessage+'<p style="color:red">Incorrect!</p><p> The rule was "the person Mary reads the book Moby-Dick".</p><p> In the diagram, Mary reads Moby-Dick</p> <img src="http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png" height="360">',
 
     }],    
 	
