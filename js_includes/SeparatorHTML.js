@@ -31,7 +31,7 @@ jqueryWidget: {
         this.element.append(p);
         if (this.style == "error") {
             this.element.addClass(this.cssPrefix + "next-item-failure-message");
-            p.text(error_message);
+            p.html(error_message);
         }
         else {
             this.element.addClass(this.cssPrefix + "next-item-message");
