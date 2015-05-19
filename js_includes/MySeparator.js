@@ -9,7 +9,7 @@ define_ibex_controller({
                 triggers: [1],
                 children: [
                     "SeparatorHTML", this.options,
-                    "Form", this.options,
+                    "PracticeQuestion", this.options,
                 ]
             });
         }
