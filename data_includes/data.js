@@ -11,9 +11,12 @@ var defaults = [
     normalMessage: "Please wait for the next statement.",
     errorMessage: "Wrong. Please wait for the next statement."
   },
-  "DashedSentence", {
-    mode: "self-paced reading",
-    display: "dashed"
+  "SeparatorHTML", {
+    transfer: "keypress",
+    normalMessage: "<h2>Correct!</h2>",
+    errorMessage: "Wrong. Please wait for the next statement.",
+	hideProgressBar: true,
+    countsForProgressBar: false,
   },
   "AcceptabilityJudgment", {
     as: ["1", "2", "3", "4", "5", "6", "7"],
@@ -56,11 +59,8 @@ var items = [
         countsForProgressBar: false,
     }],
 	["inst", "SeparatorHTML", {
-        transfer: "keypress",
-        normalMessage: "Correct!",
         errorMessage: '<p style="color:red">Incorrect!</p><p> The rule was "the person Mary reads the book Moby-Dick".</p><p> In the diagram, Mary reads Moby-Dick</p> <img src="http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png" height="360">',
-		hideProgressBar: true,
-        countsForProgressBar: false,
+
     }],    
 	
     ["inst", "PracticeQuestion", {
@@ -131,11 +131,8 @@ var items = [
         countsForProgressBar: false,
     }],	
 	["inst", "SeparatorHTML", {
-        transfer: "keypress",
         normalMessage: "Correct!",
         errorMessage: '<p style="color:red">Incorrect!</p><p> The rule was "if (the person P1 reads the book B1) then (the book B1 has as name Moby-Dick)".</p><p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When P1 = Mary and B1 = Moby-Dick, B1 = Moby-Dick. - Good</li> <li>When P1 = John and B1 = Moby-Dick, B1 = Moby-Dick. - Good</li></ol></p> <img src="http://i1341.photobucket.com/albums/o753/ezaroukian/3_zpskhezeis8.png" height="360">',
-		hideProgressBar: true,
-        countsForProgressBar: false,
     }],
 	
     ["inst", "Message", {
