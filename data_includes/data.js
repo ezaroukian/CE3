@@ -59,7 +59,7 @@ var items = [
         countsForProgressBar: false,
     }],
 	["inst", "SeparatorHTML", {
-        errorMessage: errorMessage+'<p style="color:red">Incorrect!</p><p> The rule was "the person Mary reads the book Moby-Dick".</p><p> In the diagram, Mary reads Moby-Dick</p> <img src="http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png" height="360">',
+        errorMessage: '<h2 style="color:red">Incorrect!</h2><p> The rule was "the person Mary reads the book Moby-Dick".</p><p> In the diagram, Mary reads Moby-Dick</p> <img src="http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png" height="360">',
 
     }],    
 	
