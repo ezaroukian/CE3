@@ -76,8 +76,20 @@ var items = [
         hideProgressBar: true,
         countsForProgressBar: false,
     }],
-    ["inst", "Message", {
+	["inst", "PracticeQuestion", {
+        q: "if (the person P1 reads the book B1) then (the person P1 has as name Mary).<br><img src='http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png' height='360'><br>Is the diagram consistent with the rule?",
+        as: ["Yes","No"],
         html: {include: "gen_instructions6.html"},
+        hideProgressBar: true,
+        countsForProgressBar: false,
+    }],
+	["inst", "SeparatorHTML", {
+        transfer: "keypress",
+        normalMessage: "Correct!",
+        errorMessage: "Incorrect! Because...",
+    }],
+    ["inst", "Message", {
+        html: {include: "gen_instructions-end.html"},
     }],
    ];
 items = items.concat(wrapper());
