@@ -86,7 +86,7 @@ var items = [
 	["inst", "SeparatorHTML", {
         transfer: "keypress",
         normalMessage: "Correct!",
-        errorMessage: "<p>Incorrect!</p><p> The rule was 'if (the person P1 reads the book B1) then (the book B1 has as name Moby-Dick)'.</p><p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When P1 is Mary, B1 is Moby-Dick. - Good</li> <li>When P1 is John, B1 is War and Peace!</li></ol></p> <img src='http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png' height='360'>",
+        errorMessage: '<p style="color:red">Incorrect!</p><p> The rule was "if (the person P1 reads the book B1) then (the book B1 has as name Moby-Dick)".</p><p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When P1 is Mary, B1 is Moby-Dick. - Good</li> <li>When P1 is John, B1 is War and Peace. - Inconsistent with the rule!</li></ol></p> <img src="http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png" height="360">',
 		hideProgressBar: true,
         countsForProgressBar: false,
     }],
