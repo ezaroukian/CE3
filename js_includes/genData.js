@@ -339,7 +339,7 @@ function genInst(){
         html: {include: "gen_instructions2.html"},
     }],
 	["inst", "MySeparator", {
-        q: "TESTING the person Mary reads the book Moby-Dick.<br><img src='http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png' height='360'><br>Is the diagram consistent with the rule?",
+        q: frameEx(ex1,ex1img,false),
         as: ["Yes","No"], hasCorrect: "Yes",
         //html: {include: "gen_instructions2.html"},
 		errorMessage: '<h2 style="color:red">Incorrect!</h2> <p> The rule and diagram are repeated below.</p><p> In the diagram, Mary reads Moby-Dick.</p>',
