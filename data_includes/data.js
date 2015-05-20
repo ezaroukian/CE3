@@ -65,7 +65,7 @@ var items = [
         q: "TESTING the person Mary reads the book Moby-Dick.<br><img src='http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png' height='360'><br>Is the diagram consistent with the rule?",
         as: ["Yes","No"], hasCorrect: "Yes",
         //html: {include: "gen_instructions2.html"},
-		errorMessage: '<h2 style="color:red">Incorrect!</h2> <p> The rule was "the person Mary reads the book Moby-Dick".</p><p> In the diagram, Mary reads Moby-Dick</p> <img src="http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png" height="360">',
+		errorMessage: '<h2 style="color:red">Incorrect!</h2> <p> The rule and diagram are repeated below.</p><p> In the diagram, Mary reads Moby-Dick.</p>',
     }],
 	["inst", "SeparatorHTML", {
         errorMessage: '<h2 style="color:red">Incorrect!</h2> <p> The rule was "the person Mary reads the book Moby-Dick".</p><p> In the diagram, Mary reads Moby-Dick</p> <img src="http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png" height="360">',
