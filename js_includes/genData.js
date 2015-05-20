@@ -315,7 +315,7 @@ function genInst(){
 
 	function frameEx(rule,link,test){
 		frame = rule+"<br/><img src='"+link+"' height='360'>";
-		if(!test){frame += "<br>Is the diagram consistent with the rule?");
+		if(!test){frame += "<br>Is the diagram consistent with the rule?";)
 		return frame;
 	}
 
