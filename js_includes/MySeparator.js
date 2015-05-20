@@ -5,7 +5,7 @@ define_ibex_controller({
             //this.options.transfer = null; // Remove 'click to continue message'.         
             this.element.VBox({
                 options: this.options,
-                triggers: [2],
+                triggers: [1],
                 children: [
                     "SeparatorHTML", this.options,
                     "Question", this.options,
