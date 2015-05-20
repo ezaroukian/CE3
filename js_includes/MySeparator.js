@@ -1,6 +1,5 @@
 define_ibex_controller({
     name: "MySeparator",
-
     jqueryWidget: {
         _init: function () {
             //this.options.transfer = null; // Remove 'click to continue message'.         
@@ -10,7 +9,7 @@ define_ibex_controller({
                 children: [
                     "SeparatorHTML", this.options,
                     "Question", this.options,
-					"Form", this.options,
+					"Message", this.options,
                 ]
             });
         }
