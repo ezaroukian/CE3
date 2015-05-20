@@ -313,8 +313,10 @@ function genInst(){
 	var ex1 = "the person Mary reads the book Moby-Dick.";
 	var ex1img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
 
-	function frameEx(rule,link){
-		return rule+"<br/><img src='"+link+"' height='360'><br>Is the diagram consistent with the rule?";
+	function frameEx(rule,link,test=True){
+		frame = rule+"<br/><img src='"+link+"' height='360'>";
+		if(test){frame += "<br>Is the diagram consistent with the rule?");
+		return frame;
 	}
 
 	instItems = [
@@ -326,7 +328,6 @@ function genInst(){
     ["inst", "Form", {
         html: { include: "survey.html" },
         hideProgressBar: true,
-        //countsForProgressBar: false,
     } ],
     ["inst", "Message", {
         html: {include: "gen_instructions1.html"},
@@ -335,7 +336,6 @@ function genInst(){
         q: frameEx(ex1,ex1img),
         as: ["Yes","No"], hasCorrect: "Yes",
         html: {include: "gen_instructions2.html"},
-
     }],
 	["inst", "MySeparator", {
         q: "TESTING the person Mary reads the book Moby-Dick.<br><img src='http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png' height='360'><br>Is the diagram consistent with the rule?",
