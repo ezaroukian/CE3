@@ -8,7 +8,6 @@ define_ibex_controller({
                 triggers: [1],
                 children: [
                     "SeparatorHTML", this.options,
-                    "Question", this.options,
 					"Message", this.options,
                 ]
             });
