@@ -318,7 +318,7 @@ function genInst(){
 	var ex3img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
 	var ex4 = "if (the person P1 reads the book B1) then (the person P1 has as name Mary).";
 	var ex4img = "http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png";
-	var ex4exp = '<p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When <span class="q">P1 = John</span> and <span class="q">B1 = War and Peace</span>, the rule requires <span class="q">P1 = Mary</span>. &ndash; Inconsistent!</li><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, the rule requires <span class="q">P1 = Mary</span>. &ndash; Consistent. </li> </ol></p><p>Therefore, the diagram is inconsistent with the rule.</p>'
+	var ex4exp = '<p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When <span class="q">P1 = John</span> and <span class="q">B1 = War and Peace</span>, the rule requires <span class="q">P1 = Mary</span>. &ndash; Inconsistent!</li><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, the rule requires <span class="q">P1 = Mary</span>. &ndash; Consistent. </li> </ol></p><p>Therefore, the diagram is inconsistent with the rule.</p>';
 	var ex5 = "if (the person P1 reads the book B1) then (the book B1 has as name Moby-Dick).";
 	var ex5img = "http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png";
 	var ex6 = "if (the person P1 reads the book B1) then (the book B1 has as name Moby-Dick).";
