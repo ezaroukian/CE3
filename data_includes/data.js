@@ -41,11 +41,9 @@ var defaults = [
   }
 ];
 
-var items = [
-    
-   ];
+var items = [];
    
-items = items.concat(instItems());
+items = items.concat(genInst());
 items = items.concat(wrapper());
 
 //alert(items);
