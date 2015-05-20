@@ -317,7 +317,7 @@ function genInst(){
 	
 	function frameEx(rule,link,skip){
 		frame = rule+"<br/><img src='"+link+"' height='360'>";
-		if(!test){ frame += "<br>Is the diagram consistent with the rule?"; }//if not specified, add directions to choose an option.
+		if(!skip){ frame += "<br>Is the diagram consistent with the rule?"; }//if not specified, add directions to choose an option.
 		return frame;
 	}
 
