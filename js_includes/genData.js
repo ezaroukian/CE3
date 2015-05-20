@@ -314,6 +314,11 @@ function genInst(){
 	var ex1img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
 	var ex2 = "the person Mary reads the book Middlemarch.";
 	var ex2img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
+	var ex3 = "if (the person P1 reads the book B1) then (the person P1 has as name Mary)";
+	var ex3img = "http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png";
+	
+	
+	defaultEM = '<h2 style="color:red">Incorrect!</h2> <p> The rule and diagram are repeated below.</p>';
 	
 	function frameEx(rule,link,skip){
 		frame = rule+"<br/><img src='"+link+"' height='360'>";
@@ -341,7 +346,7 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
         html: frameEx(ex1,ex1img,true),
-		errorMessage: '<h2 style="color:red">Incorrect!</h2> <p> The rule and diagram are repeated below.</p><p> In the diagram, Mary reads Moby-Dick.</p>',
+		errorMessage: defaultEM+'<p> In the diagram, Mary reads Moby-Dick.</p>',
     }],    
 	
     ["inst", "PracticeQuestion", {
@@ -350,18 +355,18 @@ function genInst(){
         html: {include: "gen_instructions3.html"},
     }],
 	["inst", "MySeparator", {
-		html: frameEx(ex2,ex2img),
-        errorMessage: '<h2 style="color:red">Incorrect!</h2> <p> The rule and diagram are repeated below.</p><p> In the diagram, Mary reads Moby-Dick, not Middlemarch.</p> ',
+		html: frameEx(ex2,ex2img,true),
+        errorMessage: defaultEM+'<p> The rule and diagram are repeated below.</p><p> In the diagram, Mary reads Moby-Dick, not Middlemarch.</p> ',
     }], 
 	
     ["inst", "PracticeQuestion", {
-        q: "if (the person P1 reads the book B1) then (the person P1 has as name Mary).<br><img src='http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png' height='360'><br>Is the diagram consistent with the rule?",
+        q: frameEx(ex3,ex3img),
         as: ["Yes","No"], hasCorrect: "Yes",
         html: {include: "gen_instructions4.html"},
     }],
 	["inst", "SeparatorHTML", {
-		html: frameEx(ex2,ex2img),
-        errorMessage: '<h2 style="color:red">Incorrect!</h2><p> The rule was "if (the person P1 reads the book B1) then (the person P1 has as name Mary)".</p><p> In the diagram, there is one person-book pair we need to look at. <ol><li>When P1 = Mary and B1 = Moby-Dick, the rule requires B1 = Moby-Dick. - Consistent with rule.</li> </ol></p>  <img src="http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png" height="360">',
+		html: frameEx(ex3,ex3img,true),
+        errorMessage: '<p> In the diagram, there is one person-book pair we need to look at. <ol><li>When P1 = Mary and B1 = Moby-Dick, the rule requires B1 = Moby-Dick. - Consistent with rule.</li> </ol></p>',
     }], 
 	
     ["inst", "PracticeQuestion", {

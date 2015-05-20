@@ -18,6 +18,12 @@ var defaults = [
 	hideProgressBar: true,
     countsForProgressBar: false,
   },
+ "MySeparator", {
+    normalMessage: "<h2>Correct!</h2><p>The rule and diagram are repeated below.</p>",
+    errorMessage: "<h2 style='color:red'>Incorrect!</h2>",
+	hideProgressBar: true,
+    countsForProgressBar: false,
+  },
   "AcceptabilityJudgment", {
     as: ["1", "2", "3", "4", "5", "6", "7"],
     presentAsScale: true,
