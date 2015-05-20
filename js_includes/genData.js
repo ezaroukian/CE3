@@ -318,6 +318,7 @@ function genInst(){
 	var ex3img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
 	var ex4 = "if (the person P1 reads the book B1) then (the person P1 has as name Mary).";
 	var ex4img = "http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png";
+	var ex4exp = '<p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When <span class="q">P1 = John</span> and <span class="q">B1 = War and Peace</span>, the rule requires <span class="q">P1 = Mary</span>. &ndash; Inconsistent!</li><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, the rule requires <span class="q">P1 = Mary</span>. &ndash; Consistent. </li> </ol></p><p>Therefore, the diagram is inconsistent with the rule.</p>'
 	var ex5 = "if (the person P1 reads the book B1) then (the book B1 has as name Moby-Dick).";
 	var ex5img = "http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png";
 	var ex6 = "if (the person P1 reads the book B1) then (the book B1 has as name Moby-Dick).";
@@ -381,7 +382,7 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: frameEx(ex4,ex4img,true),
-        errorMessage: defaultEM+'<p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When <span class="q">P1 = John</span> and <span class="q">B1 = War and Peace</span>, the rule requires <span class="q">P1 = Mary</span>. &ndash; Inconsistent!</li><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, the rule requires <span class="q">P1 = Mary</span>. &ndash; Consistent. </li> </ol></p><p>Therefore, the diagram is inconsistent with the rule.</p>',
+        errorMessage: defaultEM+ex4exp,
     }], 
 	
 	["inst", "PracticeQuestion", {
@@ -463,13 +464,12 @@ function genSeq(){
 	return options[newOrd];
 }
 
-/*
+
 //for testing in browser
-document.getElementById("test").innerHTML = "running...";  
+document.getElementById("ex4").innerHTML = ex4exp;  
 
-document.getElementById("textDiv1").innerHTML = CErulesList2;		 
+//document.getElementById("textDiv1").innerHTML = CErulesList2;		 
 //document.getElementById("textDiv2").innerHTML = ce11n13_nn_r_2B.rule ;
-document.getElementById("textDiv3").innerHTML = ibexItem(ontoList[0],CErulesList2[0]);
-document.getElementById("textDiv4").innerHTML = ibexItemsList(ontoList,CErulesList2);
+//document.getElementById("textDiv3").innerHTML = ibexItem(ontoList[0],CErulesList2[0]);
+//document.getElementById("textDiv4").innerHTML = ibexItemsList(ontoList,CErulesList2);
 
-*/
