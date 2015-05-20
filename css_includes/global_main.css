@@ -43,3 +43,7 @@ span.retry:hover {
 span.retry:visited {
     color: blue;
 }
+
+span.q{
+	font-family: "Sans-serif";
+}
