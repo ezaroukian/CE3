@@ -340,7 +340,7 @@ function genInst(){
         html: {include: "gen_instructions2.html"},
     }],
 	["inst", "MySeparator", {
-        html: frameEx(ex1,ex1img,true),
+        html: "<p>Some html</p>",//frameEx(ex1,ex1img,true),
 		errorMessage: '<h2 style="color:red">Incorrect!</h2> <p> The rule and diagram are repeated below.</p><p> In the diagram, Mary reads Moby-Dick.</p>',
     }],    
 	
