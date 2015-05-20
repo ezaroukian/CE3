@@ -351,7 +351,7 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
         html: frameEx(ex1,ex1img,true),
-		errorMessage: defaultEM+'<p> In the diagram, Mary reads Moby-Dick.</p>',
+		errorMessage: defaultEM+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>.</p>',
     }],    
 	
     ["inst", "PracticeQuestion", {
@@ -361,7 +361,7 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: frameEx(ex2,ex2img,true),
-        errorMessage: defaultEM+'<p> In the diagram, Mary reads Moby-Dick, not Middlemarch.</p> ',
+        errorMessage: defaultEM+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>, not <span class="q">Middlemarch</span>.</p> ',
     }], 
 	
     ["inst", "PracticeQuestion", {
