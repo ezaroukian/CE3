@@ -356,7 +356,7 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: frameEx(ex2,ex2img,true),
-        errorMessage: defaultEM+'<p> The rule and diagram are repeated below.</p><p> In the diagram, Mary reads Moby-Dick, not Middlemarch.</p> ',
+        errorMessage: defaultEM+'<p> In the diagram, Mary reads Moby-Dick, not Middlemarch.</p> ',
     }], 
 	
     ["inst", "PracticeQuestion", {
@@ -366,7 +366,7 @@ function genInst(){
     }],
 	["inst", "SeparatorHTML", {
 		html: frameEx(ex3,ex3img,true),
-        errorMessage: '<p> In the diagram, there is one person-book pair we need to look at. <ol><li>When P1 = Mary and B1 = Moby-Dick, the rule requires B1 = Moby-Dick. - Consistent with rule.</li> </ol></p>',
+        errorMessage: defaultEM+'<p> In the diagram, there is one person-book pair we need to look at. <ol><li>When P1 = Mary and B1 = Moby-Dick, the rule requires B1 = Moby-Dick. - Consistent with rule.</li> </ol></p>',
     }], 
 	
     ["inst", "PracticeQuestion", {
