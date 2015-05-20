@@ -447,7 +447,7 @@ function genSeq(){
 	return options[newOrd];
 }
 
-
+/*
 //for testing in browser
 document.getElementById("test").innerHTML = "running...";  
 
@@ -455,3 +455,5 @@ document.getElementById("textDiv1").innerHTML = CErulesList2;
 //document.getElementById("textDiv2").innerHTML = ce11n13_nn_r_2B.rule ;
 document.getElementById("textDiv3").innerHTML = ibexItem(ontoList[0],CErulesList2[0]);
 document.getElementById("textDiv4").innerHTML = ibexItemsList(ontoList,CErulesList2);
+
+*/
