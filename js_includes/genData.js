@@ -326,7 +326,7 @@ function genInst(){
 	defaultEM = '<h2 style="color:red">Incorrect!</h2> <p> The rule and diagram are repeated below.</p>';
 	
 	function frameEx(rule,link,skip){
-		frame = "<div style='align:center;'>"+rule+"<br/><img src='"+link+"' height='360'></div>";
+		frame = "<div style='align:center;'><p>"+rule+"</p><br/><img src='"+link+"' height='360'></div>";
 		if(!skip){ frame += "<br>Is the diagram consistent with the rule?"; }//if not specified, add directions to choose an option.
 		return frame;
 	}
