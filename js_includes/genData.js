@@ -314,7 +314,7 @@ function genInst(){
 	var ex1img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
 
 	function frameEx(rule,link){
-		return rule+"<br/><img src='"+link+"' height='360'><br>Is the diagram consistent with the rule?"";
+		return rule+"<br/><img src='"+link+"' height='360'><br>Is the diagram consistent with the rule?";
 	}
 
 	instItems = [
