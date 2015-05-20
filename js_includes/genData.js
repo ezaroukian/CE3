@@ -310,7 +310,14 @@ function wrapper(){
 
 //
 function genInst(){
-instItems = [
+	var ex1 = "the person Mary reads the book Moby-Dick.";
+	var ex1img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
+
+	function frameEx(rule,link){
+		return rule+"<br/><img src='"+link+"' height='360'><br>Is the diagram consistent with the rule?"";
+	}
+
+	instItems = [
 	["sep", "SeparatorHTML", {
         transfer: "keypress",
         normalMessage: "<div align='center'><p><i>Press any key to continue.</i></p><p><i>Remember to respond as <b>quickly</b> and as <b>accurately</b> as possible.</i></p></div>",
@@ -325,7 +332,7 @@ instItems = [
         html: {include: "gen_instructions1.html"},
     }],
     ["inst", "PracticeQuestion", {
-        q: "the person Mary reads the book Moby-Dick.<br><img src='http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png' height='360'><br>Is the diagram consistent with the rule?",
+        q: frameEx(ex1,ex1img),
         as: ["Yes","No"], hasCorrect: "Yes",
         html: {include: "gen_instructions2.html"},
 
