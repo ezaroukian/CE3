@@ -338,9 +338,9 @@ function genInst(){
         q: frameEx(ex1,ex1img),
         as: ["Yes","No"], hasCorrect: "Yes",
         html: {include: "gen_instructions2.html"},
-    }],/*
+    }],
 	["inst", "MySeparator", {
-        html: {include: "gen_instructions2.html"},//html: "<p>Some html</p>",//frameEx(ex1,ex1img,true),
+        html: frameEx(ex1,ex1img,true),
 		errorMessage: '<h2 style="color:red">Incorrect!</h2> <p> The rule and diagram are repeated below.</p><p> In the diagram, Mary reads Moby-Dick.</p>',
     }],    
 	
@@ -398,7 +398,7 @@ function genInst(){
     ["inst", "Message", {
         html: {include: "gen_instructions-end.html"},
     }]
-	*/
+	
 	];
 	
 	return instItems;
