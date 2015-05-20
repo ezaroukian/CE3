@@ -313,9 +313,9 @@ function genInst(){
 	var ex1 = "the person Mary reads the book Moby-Dick.";
 	var ex1img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
 
-	function frameEx(rule,link,test=True){
+	function frameEx(rule,link,test){
 		frame = rule+"<br/><img src='"+link+"' height='360'>";
-		if(test){frame += "<br>Is the diagram consistent with the rule?");
+		if(!test){frame += "<br>Is the diagram consistent with the rule?");
 		return frame;
 	}
 
