@@ -371,7 +371,7 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: frameEx(ex3,ex3img,true),
-        errorMessage: defaultEM+'<p> In the diagram, there is one person-book pair we need to look at. <ol><li>When P1 = Mary and B1 = Moby-Dick, the rule requires B1 = Moby-Dick. - Consistent with rule.</li> </ol></p>',
+        errorMessage: defaultEM+'<p> In the diagram, there is one person-book pair we need to look at. <ol><li>When P1 = Mary and B1 = Moby-Dick, the rule requires B1 = Moby-Dick. &ndash; Consistent.</li> </ol></p>',
     }], 
 	
     ["inst", "PracticeQuestion", {
@@ -381,7 +381,7 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: frameEx(ex4,ex4img,true),
-        errorMessage: defaultEM+'<p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When P1 = John and B1 = War and Peace, the rule requires P1 = Mary. - Inconsistent with rule!</li><li>When P1 = Mary and B1 = Moby-Dick, the rule requires P1 = Mary. - Consistent with rule. </li> </ol></p>',
+        errorMessage: defaultEM+'<p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When <span class="q">P1 = John</span> and <span class="q">B1 = War and Peace</span>, the rule requires <span class="q">P1 = Mary</span>. &ndash; Inconsistent!</li><li>When P1 = Mary and B1 = Moby-Dick, the rule requires P1 = Mary. &ndash; Consistent. </li> </ol></p>',
     }], 
 	
 	["inst", "PracticeQuestion", {
