@@ -315,7 +315,7 @@ function genInst(){
 	var ex2 = "the person Mary reads the book Middlemarch.";
 	var ex2img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
 	var ex3 = "if (the person P1 reads the book B1) then (the person P1 has as name Mary).";
-	var ex3img = "http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png";
+	var ex3img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
 	var ex4 = "if (the person P1 reads the book B1) then (the person P1 has as name Mary).";
 	var ex4img = "http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png";
 	var ex5 = "if (the person P1 reads the book B1) then (the book B1 has as name Moby-Dick).";
