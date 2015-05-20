@@ -309,7 +309,6 @@ function wrapper(){
 
 
 //
-function genInst(){
 	var ex1 = "the person Mary reads the book Moby-Dick.";
 	var ex1img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
 	var ex2 = "the person Mary reads the book Middlemarch.";
@@ -323,6 +322,8 @@ function genInst(){
 	var ex5img = "http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png";
 	var ex6 = "if (the person P1 reads the book B1) then (the book B1 has as name Moby-Dick).";
 	var ex6img = "http://i1341.photobucket.com/albums/o753/ezaroukian/3_zpskhezeis8.png";
+function genInst(){
+
 	
 	defaultEM = '<h2 style="color:red">Incorrect!</h2> <p> The rule and diagram are repeated below.</p>';
 	
