@@ -19,7 +19,7 @@ var defaults = [
     countsForProgressBar: false,
   },
  "MySeparator", {
-    normalMessage: "<h2>Correct!</h2><p>The rule and diagram are repeated below.</p>",
+    normalMessage: "<h2  style='color:green'>Correct!</h2><p>The rule and diagram are repeated below.</p>",
     errorMessage: "<h2 style='color:red'>Incorrect!</h2>",
 	hideProgressBar: true,
     countsForProgressBar: false,
