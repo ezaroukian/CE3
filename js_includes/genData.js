@@ -344,12 +344,12 @@ function genInst(){
         hideProgressBar: true,
     } ],
     ["inst", "Message", {
-        html: {include: "gen_instructions1.html"},
+        html: {include: "1instructions1.html"},
     }],
     ["inst", "PracticeQuestion", {
         q: frameEx(ex1,ex1img),
         as: ["Yes","No"], hasCorrect: "Yes",
-        html: {include: "gen_instructions2.html"},
+        html: {include: "2example1.html"},
     }],
 	["inst", "MySeparator", {
         html: frameEx(ex1,ex1img,true),
@@ -359,7 +359,7 @@ function genInst(){
     ["inst", "PracticeQuestion", {
         q: frameEx(ex2,ex2img),
         as: ["Yes","No"], hasCorrect: "No",
-        html: {include: "gen_instructions3.html"},
+        html: {include: "3example2.html"},
     }],
 	["inst", "MySeparator", {
 		html: frameEx(ex2,ex2img,true),
@@ -369,7 +369,7 @@ function genInst(){
     ["inst", "PracticeQuestion", {
         q: frameEx(ex3,ex3img),
         as: ["Yes","No"], hasCorrect: "Yes",
-        html: {include: "gen_instructions4.html"},
+        html: {include: "4example3.html"},
     }],
 	["inst", "MySeparator", {
 		html: frameEx(ex3,ex3img,true),
@@ -379,7 +379,7 @@ function genInst(){
     ["inst", "PracticeQuestion", {
         q: frameEx(ex4,ex4img),
         as: ["Yes","No"], hasCorrect: "No",
-        html: {include: "gen_instructions5.html"},
+        html: {include: "5example4.html"},
     }],
 	["inst", "MySeparator", {
 		html: frameEx(ex4,ex4img,true),
@@ -389,7 +389,7 @@ function genInst(){
 	["inst", "PracticeQuestion", {
         q: frameEx(ex5,ex5img),
         as: ["Yes","No"], hasCorrect: "No",
-        html: {include: "gen_instructions6.html"},
+        html: {include: "6example5.html"},
     }],
 	["inst", "MySeparator", {
 		html: frameEx(ex5,ex5img,true),
@@ -400,7 +400,7 @@ function genInst(){
 	["inst", "PracticeQuestion", {
         q: frameEx(ex6,ex6img),
         as: ["Yes","No"], hasCorrect: "Yes",
-        html: {include: "gen_instructions6.html"},
+        html: {include: "6example5.html"},
     }],	
 	["inst", "MySeparator", {
 		html: frameEx(ex6,ex6img,true),
@@ -408,7 +408,7 @@ function genInst(){
     }],
 	
     ["inst", "Message", {
-        html: {include: "gen_instructions-end.html"},
+        html: {include: "instructions-end.html"},
     }]
 	
 	];
