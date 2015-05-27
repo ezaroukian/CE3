@@ -245,9 +245,9 @@ for (i=0;i<diffs.length;i++){
 var tempLink = "http://i1341.photobucket.com/albums/o753/ezaroukian/11_zpsatl1xhmu.png";
 //ontographs
 var ontoList = [
-{type: "11", link: "http://i1341.photobucket.com/albums/o753/ezaroukian/11_zpsatl1xhmu.png"},
-{type: "13", link: "http://i1341.photobucket.com/albums/o753/ezaroukian/13_zpslqb6lf25.png"},
-{type: "31", link: "http://i1341.photobucket.com/albums/o753/ezaroukian/31_zpss87hqnkb.png"},
+{type: "11", link: "http://i1341.photobucket.com/albums/o753/ezaroukian/11new_zpsplmvl6ul.png"},//"http://i1341.photobucket.com/albums/o753/ezaroukian/11_zpsatl1xhmu.png"
+{type: "13", link: "http://i1341.photobucket.com/albums/o753/ezaroukian/13new_zpsysmrjtpm.png"},//"http://i1341.photobucket.com/albums/o753/ezaroukian/13_zpslqb6lf25.png"
+{type: "31", link: "http://i1341.photobucket.com/albums/o753/ezaroukian/31new_zpsnevqzba3.png"},//"http://i1341.photobucket.com/albums/o753/ezaroukian/31_zpss87hqnkb.png"
 {type: "33", link: "http://i1341.photobucket.com/albums/o753/ezaroukian/33_zpsy18d3v6x.png"}
 ]; 
 
