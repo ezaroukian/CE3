@@ -13,7 +13,7 @@ var defaults = [
   },
   "SeparatorHTML", {
     transfer: "keypress",
-    normalMessage: "<h2>Correct!</h2>",
+    normalMessage: "<h2 style='color:green'>Correct!</h2>",
     errorMessage: "<h2 style='color:red'>Incorrect!</h2>",
 	hideProgressBar: true,
     countsForProgressBar: false,
