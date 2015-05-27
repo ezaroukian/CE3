@@ -322,6 +322,10 @@ function wrapper(){
 	var ex5img = "http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png";
 	var ex6 = "if (the person P1 reads the book B1) then (the book B1 has as name Moby-Dick).";
 	var ex6img = "http://i1341.photobucket.com/albums/o753/ezaroukian/3_zpskhezeis8.png";
+	
+	
+	document.getElementById("toFill4").innerHTML = ex4exp;
+	
 function genInst(){
 
 	
