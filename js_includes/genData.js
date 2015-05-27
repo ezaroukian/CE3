@@ -324,7 +324,7 @@ function wrapper(){
 	var ex6img = "http://i1341.photobucket.com/albums/o753/ezaroukian/3_zpskhezeis8.png";
 	
 	
-	document.getElementById("toFill4").innerHTML = ex4exp;
+	
 	
 function genInst(){
 
