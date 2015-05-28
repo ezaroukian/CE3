@@ -57,7 +57,7 @@ function yesRadio(ele_name)
   {
     if (ele[i].checked)
     {
-      return ele[i].value=="1";
+      return ele[i].value!="1";
     }
   }
   return false;
@@ -122,8 +122,10 @@ function validateRequiredCheck(valfield, infofield)
       </tbody>
     </table>
   </li>
-  <li>
-    <p>What is your gender? <input type="radio" value="1" name="gender" /><span class="answertext">Female<input type="radio" value="0" name="gender" /><span class="answertext">Male</span></span></p>
+   <li>
+    <p>What is your gender?<br/>
+	<input type="radio" value="1" name="gender" /><span class="answertext">Female<br/>
+	<input type="radio" value="0" name="gender" /><span class="answertext">Male</span></span></p>
   </li>
   <li>
     <p>What is your age? <input type="text" name="Age" id="age" size="20" /></p>
@@ -131,9 +133,12 @@ function validateRequiredCheck(valfield, infofield)
 
   <li>
     <p>
-      Do you have experience with logic or computer programming? 
-      <input type="radio" value="1" name="logic" onchange="chkFrm()"/>Yes
-      <input type="radio" value="0" name="logic" onchange="chkFrm()"/>No
+      How much knowledge do you have of logic and/or programming? (e.g., coursework or practical experience) <br/>
+      <input type="radio" value="1" name="logic" onchange="chkFrm()"/>No Knowledge<br/>
+      <input type="radio" value="2" name="logic" onchange="chkFrm()"/>A Little Knowledge<br/>
+	  <input type="radio" value="3" name="logic" onchange="chkFrm()"/>Some Knowledge<br/>
+	  <input type="radio" value="4" name="logic" onchange="chkFrm()"/>A Lot of Knowledge<br/>
+	  <input type="radio" value="5" name="logic" onchange="chkFrm()"/>Expert Knowledge
     </p>
     
     <table cellspacing="6" cellpadding="0" border="0">
