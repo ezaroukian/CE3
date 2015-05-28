@@ -23,8 +23,8 @@ var defaults = [
  "MySeparator", {
     normalMessage: "<h2 style='color:green'>Correct!</h2><p>The rule and diagram are repeated below.</p>",
     errorMessage: "<h2 style='color:red'>Incorrect!</h2>",
+	countsForProgressBar: false,
 	hideProgressBar: true,
-    countsForProgressBar: false,
   },
   "AcceptabilityJudgment", {
     as: ["1", "2", "3", "4", "5", "6", "7"],
