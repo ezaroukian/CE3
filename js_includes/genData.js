@@ -351,12 +351,12 @@ function genInst(){
         html: {include: "1instructions1.html"},
     }],
     ["inst", "PracticeQuestion", {
-        q: frameEx(ex1,ex1img),
+        q: "<h3>Example 1:</h3>"+frameEx(ex1,ex1img),
         as: ["Yes","No"], hasCorrect: "Yes",
         html: {include: "2example1.html"},
     }],
 	["inst", "MySeparator", {
-        html: frameEx(ex1,ex1img,true),
+        html: "<h3>Example 1:</h3>"+frameEx(ex1,ex1img,true),
 		errorMessage: defaultEM+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>.</p>',
     }],    
 	
