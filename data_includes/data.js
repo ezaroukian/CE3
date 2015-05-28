@@ -35,8 +35,8 @@ var defaults = [
     randomOrder: false
   },  
   "PracticeQuestion", {
-    hideProgressBar: false,
-	countsForProgressBar: true,
+    hideProgressBar: true,
+	countsForProgressBar: false,
   },
   "Message", {
     hideProgressBar: true,
