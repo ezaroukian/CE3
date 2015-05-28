@@ -13,5 +13,7 @@ define_ibex_controller({
             });
         }
     },
-    properties: {}
+    properties: {
+		countsForProgressBar: false,
+	}
 });
