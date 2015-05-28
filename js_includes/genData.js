@@ -361,7 +361,7 @@ function genInst(){
     }],    
 	
     ["inst", "PracticeQuestion", {
-        q: frameEx(ex2,ex2img),
+        q: "<h3>Example 2:</h3>"+frameEx(ex2,ex2img),
         as: ["Yes","No"], hasCorrect: "No",
         html: {include: "3example2.html"},
     }],
