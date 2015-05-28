@@ -341,7 +341,8 @@ function genInst(){
 	["sep", "SeparatorHTML", {
         transfer: "keypress",
         normalMessage: "<div align='center'><p><i>Press any key to continue.</i></p><p><i>Remember to respond as <b>quickly</b> and as <b>accurately</b> as possible.</i></p></div>",
-        ignoreFailure: true
+        ignoreFailure: true,
+		hideProgressBar: false,
     }],
     ["inst", "Form", {
         html: { include: "survey.html" },
