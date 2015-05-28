@@ -8,7 +8,8 @@ define_ibex_controller({
                 triggers: [1],
                 children: [
                     "Message", this.options,
-                    "Question", this.options ]
+                    "Question", this.options ],
+				padding: "0em"
             });
         }
     },
