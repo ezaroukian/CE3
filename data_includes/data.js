@@ -9,7 +9,7 @@ var defaults = [
   "Separator", {
     transfer: 1000,
     normalMessage: "Please wait for the next statement.",
-    errorMessage: "Wrong. Please wait for the next statement."
+    errorMessage: "Wrong. Please wait for the next statement.",
   },
   "SeparatorHTML", {
     transfer: "keypress",
@@ -28,7 +28,7 @@ var defaults = [
     as: ["1", "2", "3", "4", "5", "6", "7"],
     presentAsScale: true,
     instructions: "Use number keys or click boxes to answer.",
-    leftComment: "(bad)", rightComment: "(good)"
+    leftComment: "(bad)", rightComment: "(good)",
   },
   "Question", {
     randomOrder: false
@@ -38,7 +38,7 @@ var defaults = [
 	countsForProgressBar: false,
   },
   "Message", {
-    hideProgressBar: true
+    hideProgressBar: true,
 	countsForProgressBar: false,
   },
   "Form", {
