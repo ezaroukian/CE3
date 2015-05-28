@@ -356,7 +356,7 @@ function genInst(){
         html: {include: "2example1.html"},
     }],
 	["inst", "MySeparator", {
-        html: "<h3>Example 1:</h3>"+frameEx(ex1,ex1img,true),
+        html: "<h3 align='center'>Example 1:</h3>"+frameEx(ex1,ex1img,true),
 		errorMessage: defaultEM+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>.</p>',
     }],    
 	
@@ -366,7 +366,7 @@ function genInst(){
         html: {include: "3example2.html"},
     }],
 	["inst", "MySeparator", {
-		html: frameEx(ex2,ex2img,true),
+		html: "<h3 align='center'>Example 2:</h3>"+frameEx(ex2,ex2img,true),
         errorMessage: defaultEM+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>, not <span class="q">Middlemarch</span>.</p> ',
     }], 
 	
