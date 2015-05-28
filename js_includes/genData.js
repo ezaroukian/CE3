@@ -371,43 +371,43 @@ function genInst(){
     }], 
 	
     ["inst", "PracticeQuestion", {
-        q: frameEx(ex3,ex3img),
+        q: "<h3>Example 3:</h3>"+frameEx(ex3,ex3img),
         as: ["Yes","No"], hasCorrect: "Yes",
         html: {include: "4example3.html"},
     }],
 	["inst", "MySeparator", {
-		html: frameEx(ex3,ex3img,true),
+		html: "<h3 align='center'>Example 3:</h3>"+frameEx(ex3,ex3img,true),
         errorMessage: defaultEM+'<p> In the diagram, there is one person-book pair we need to look at. <ol><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, the rule requires <span class="q">B1 = Moby-Dick</span>. &ndash; Consistent.</li> </ol></p>',
     }], 
 	
     ["inst", "PracticeQuestion", {
-        q: frameEx(ex4,ex4img),
+        q: "<h3>Example 4:</h3>"+frameEx(ex4,ex4img),
         as: ["Yes","No"], hasCorrect: "No",
         html: {include: "5example4.html"},
     }],
 	["inst", "MySeparator", {
-		html: frameEx(ex4,ex4img,true),
+		html: "<h3 align='center'>Example 4:</h3>"+frameEx(ex4,ex4img,true),
         errorMessage: defaultEM+ex4exp,
     }], 
 	
 	["inst", "PracticeQuestion", {
-        q: frameEx(ex5,ex5img),
+        q: "<h3>Example 5:</h3>"+frameEx(ex5,ex5img),
         as: ["Yes","No"], hasCorrect: "No",
         html: {include: "6example5.html"},
     }],
 	["inst", "MySeparator", {
-		html: frameEx(ex5,ex5img,true),
+		html: "<h3 align='center'>Example 5:</h3>"+frameEx(ex5,ex5img,true),
         errorMessage: defaultEM+'<p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When <span class="q">P1 = John</span> and <span class="q">B1 = War and Peace</span>, <span class="q">B1 = Moby-Dick</span>. &ndash; Inconsistent!</li><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, <span class="q">B1 = Moby-Dick</span>. &ndash; Consistent.</li> </ol></p><p>Therefore, the diagram is inconsistent with the rule.</p>',
 
     }],
 	
 	["inst", "PracticeQuestion", {
-        q: frameEx(ex6,ex6img),
+        q: "<h3>Example 5:</h3>"+frameEx(ex6,ex6img),
         as: ["Yes","No"], hasCorrect: "Yes",
         html: {include: "6example5.html"},
     }],	
 	["inst", "MySeparator", {
-		html: frameEx(ex6,ex6img,true),
+		html: "<h3 align='center'>Example 6:</h3>"+frameEx(ex6,ex6img,true),
         errorMessage: defaultEM+'<p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, <span class="q">B1 = Moby-Dick</span>. &ndash; Consistent.</li> <li>When <span class="q">P1 = John</span> and <span class="q">B1 = Moby-Dick</span>, <span class="q">B1 = Moby-Dick</span>. &ndash; Consistent</li></ol></p>><p>Therefore, the diagram is consistent with the rule.</p>',
     }],
 	
