@@ -24,7 +24,7 @@ var defaults = [
     normalMessage: "<h2 style='color:green'>Correct!</h2><p>The rule and diagram are repeated below.</p>",
     errorMessage: "<h2 style='color:red'>Incorrect!</h2>",
 	countsForProgressBar: false,
-	hideProgressBar: true,
+	hideProgressBar: false,
   },
   "AcceptabilityJudgment", {
     as: ["1", "2", "3", "4", "5", "6", "7"],
@@ -36,7 +36,7 @@ var defaults = [
     randomOrder: false
   },  
   "PracticeQuestion", {
-    hideProgressBar: true,
+    hideProgressBar: false,
 	countsForProgressBar: false,
   },
   "Message", {
