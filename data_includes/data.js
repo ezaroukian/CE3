@@ -10,6 +10,8 @@ var defaults = [
     transfer: 1000,
     normalMessage: "Please wait for the next statement.",
     errorMessage: "Wrong. Please wait for the next statement.",
+	hideProgressBar: false,
+    countsForProgressBar: false,
   },
   "SeparatorHTML", {
     transfer: "keypress",
