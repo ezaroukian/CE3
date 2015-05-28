@@ -402,7 +402,7 @@ function genInst(){
     }],
 	
 	["inst", "PracticeQuestion", {
-        q: "<h3>Example 5:</h3>"+frameEx(ex6,ex6img),
+        q: "<h3>Example 6:</h3>"+frameEx(ex6,ex6img),
         as: ["Yes","No"], hasCorrect: "Yes",
         html: {include: "6example5.html"},
     }],	
