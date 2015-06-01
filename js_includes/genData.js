@@ -332,7 +332,8 @@ function wrapper(){
 function genInst(){
 
 	
-	defaultEM = '<h2 style="color:red">Incorrect!</h2> <p> The rule and diagram are repeated below.</p>';
+	defaultEM = '<h2 style="color:red">Incorrect!</h2>';
+	defaultCM = '<h2 style="color:green">Incorrect!</h2>';
 	
 	function frameEx(rule,link,skip){
 		frame = "<div align='center'><p><span class='q'>"+rule+"</span></p><br/><img src='"+link+"' height='360'></div>";
@@ -340,8 +341,14 @@ function genInst(){
 		return frame;
 	}
 
-	var isCons = "<p align='center'>The diagram is consistent with the rule.</p><br/>"
-	var notCons = "<p align='center'>The diagram is NOT consistent with the rule.</p><br/>"
+	var isCons = "<p align='center'>The diagram IS consistent with the rule.</p><br/>";
+	var notCons = "<p align='center'>The diagram is NOT consistent with the rule.</p><br/>";
+	var repeated = "<p> The rule and diagram are repeated below.</p><br/>";
+	
+	var inIsCons = defaultEM+isCons+repeated;
+	var inNotCons = defaultEM+notCons+repeated;
+	var coIsCons = defaultCM+isCons+repeated;
+	var coNotCons = defaultCM+notCons+repeated;
 	
 	instItems = [
 	["sep", "SeparatorHTML", {
@@ -362,8 +369,8 @@ function genInst(){
         html: {include: "2example1.html"},
     }],
 	["inst", "MySeparator", {
-        html: isCons+"<h3 align='center'>Example 1:</h3>"+frameEx(ex1,ex1img,true),
-		errorMessage: defaultEM+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>.</p>',
+        html: coIsCons+"<h3 align='center'>Example 1:</h3>"+frameEx(ex1,ex1img,true),
+		errorMessage: inIsCons+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>.</p>',
     }],    
 	
     ["inst", "PracticeQuestion", {
