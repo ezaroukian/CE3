@@ -325,8 +325,10 @@ function wrapper(){
 	
 	var ex25 = "if (the person P1 has as name John) then (the person P1 reads the book War and Peace).";
 	var ex25img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1jw_zpscr1u8q4m.png";
+	var ex25exp = "<p> To determine if the diagram is consistent with this rule, we need to find the cases in the diagram where the 'if'-clause is true, then check whether the 'then'-clause is true. </p> <ul><li>	IF: The 'if'-clause is true when <span class='q'>P1=John</span> (<span class='q'>the person John has as name John.</span>)</li>	<li>THEN: When <span class='q'>P1=John</span>, the 'then'-clause (<span class='q'>the person John reads the book War and Peace.</span>) is true </li> </ul>";
 	var ex26 = ex25;
 	var ex26img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1jwp_zpsqofoc3jw.png";
+	var ex26exp = " <p>To determine if the diagram is consistent with this rule, we need to find the cases where the 'if'-clause is true, then check whether the 'then'-clause is true. </p> <ul>	<li>The 'if'-clause is true when <span class='q'>P1=John</span>. (When <span class='q'>P1=Mary</span> or <span class='q'>P1=Peter</span>, the 'if'-clause is false, since neither has the name <span class='q'John</span>)	</li>	<li> When <span class='q'>P1=John</span>, the 'then'-clause (<span class='q'>John reads War and Peace</span>) is true </li> </ul>";
 	
 	
 function genInst(){
@@ -396,7 +398,7 @@ function genInst(){
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 2.5:</h3>"+frameEx(ex25,ex25img,true),
 		normalMessage: coIsCons,
-        errorMessage: inIsCons+'explan',
+        errorMessage: inIsCons+ex25exp,
     }], 
 	
     ["inst", "PracticeQuestion", {
