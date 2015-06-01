@@ -453,8 +453,10 @@ function genInst(){
 	
     ["inst", "Message", {
         html: {include: "instructions-end.html"},
-    }]
-	
+    }],
+	["end", "Form", {
+        html: { include: "endSurvey.html" },
+    } ],
 	];
 	
 	return instItems;
@@ -477,7 +479,8 @@ function genSeq(){
 		"11-1xn3x_u_2P2B_dif","13-1xn3x_u_2P2B_dif",
 		"31-x1nx3_u_2B2P_can","33-x1nx3_u_2B2P_can",
 		"11-x3nx1_o_2B2P_isn","31-x3nx1_r_2B2P_dif",
-		"13-3xn1x_o_2P2B_can","33-3xn1x_r_2P2B_dif"
+		"13-3xn1x_o_2P2B_can","33-3xn1x_r_2P2B_dif",
+		"end"
   		))));
   
 	var idc = seq("inst",sepWith("sep",rshuffle(rshuffle(
@@ -488,7 +491,8 @@ function genSeq(){
 		"11-1xn3x_u_2P2B_can","13-1xn3x_u_2P2B_can",
 		"31-x1nx3_u_2B2P_isn","33-x1nx3_u_2B2P_isn",
 		"11-x3nx1_o_2B2P_dif","31-x3nx1_r_2B2P_can",
-		"13-3xn1x_o_2P2B_isn","33-3xn1x_r_2P2B_can"
+		"13-3xn1x_o_2P2B_isn","33-3xn1x_r_2P2B_can",
+		"end"
 		))));
   
     	var dci = seq("inst",sepWith("sep",rshuffle(rshuffle(
@@ -499,7 +503,8 @@ function genSeq(){
 		"11-1xn3x_u_2P2B_isn","13-1xn3x_u_2P2B_isn",
 		"31-x1nx3_u_2B2P_dif","33-x1nx3_u_2B2P_dif",
 		"11-x3nx1_o_2B2P_can","31-x3nx1_r_2B2P_isn",
-		"13-3xn1x_o_2P2B_dif","33-3xn1x_r_2P2B_isn"
+		"13-3xn1x_o_2P2B_dif","33-3xn1x_r_2P2B_isn",
+		"end"
    		))));
    
 	var newOrd = Math.floor((Math.random() * 3)); 
