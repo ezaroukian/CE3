@@ -399,7 +399,7 @@ function genInst(){
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 2.5:</h3>"+frameEx(ex25,ex25img,true),
 		normalMessage: coIsCons,
-        errorMessage: inIsCons+ex25exp,
+        errorMessage: '<div style="width:40em;">'+inIsCons+ex25exp+'</div>',
     }], 
 	
     ["inst", "PracticeQuestion", {
