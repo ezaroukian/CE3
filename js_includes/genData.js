@@ -446,7 +446,7 @@ function genInst(){
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 6:</h3>"+frameEx(ex6,ex6img,true),
 		normalMessage: coIsCons,
-        errorMessage: inIsCons+'<p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Consistent</i></li> <li>When <span class="q">P1 = John</span> and <span class="q">B1 = Moby-Dick</span>, <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Consistent</i></li></ol></p>><p>Therefore, the diagram is consistent with the rule.</p>',
+        errorMessage: inIsCons+ex6exp,
     }],
 	
     ["inst", "Message", {
