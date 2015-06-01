@@ -346,7 +346,7 @@ function genInst(){
 	var isCons = "<p>The diagram IS consistent with the rule.</p>";
 	var notCons = "<p>The diagram is NOT consistent with the rule.</p>";
 	
-	var repeated = "<p> The rule and diagram are repeated below.</p>";
+	var repeated = "";//"<p> The rule and diagram are repeated below.</p>";
 	
 	var inIsCons = defaultEM+isCons+repeated;
 	var inNotCons = defaultEM+notCons+repeated;
