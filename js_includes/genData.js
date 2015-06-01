@@ -315,6 +315,7 @@ function wrapper(){
 	var ex2img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
 	var ex3 = "if (the person P1 reads the book B1) then (the person P1 has as name Mary).";
 	var ex3img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
+	var ex3exp = " <p> Again, to determine if the diagram is consistent with this rule, we need to find the cases in the diagram where the 'if'-clause is true, then check whether the 'then'-clause is true. </p> <ul>	<li>	IF: The 'if'-clause is true when <span class='q'>P1=Mary</span> and <span class='q'>B1=Moby-Dick</span> (<span class='q'>the person Mary reads the book Moby Dick</span>)	</li>	<li>THEN: When <span class='q'>P1=Mary</span> and <span class='q'>B1=Moby-Dick</span>, the 'then'-clause (<span class='q'>the person Mary has as name Mary</span>) is true </li> </ul>";
 	var ex4 = "if (the person P1 reads the book B1) then (the person P1 has as name Mary).";
 	var ex4img = "http://i1341.photobucket.com/albums/o753/ezaroukian/2_zpstsuxtudr.png";
 	var ex4exp = '<p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When <span class="q">P1 = John</span> and <span class="q">B1 = War and Peace</span>, the rule requires <span class="q">P1 = Mary</span>. &ndash; Inconsistent!</li><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, the rule requires <span class="q">P1 = Mary</span>. &ndash; Consistent. </li> </ol></p><p>Therefore, the diagram is inconsistent with the rule.</p>';
@@ -409,7 +410,7 @@ function genInst(){
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 3:</h3>"+frameEx(ex3,ex3img,true),
 		normalMessage: coIsCons,
-        errorMessage: inIsCons+'<p> In the diagram, there is one person-book pair we need to look at. <ol><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, the rule requires <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Consistent</i></li> </ol></p>',
+        errorMessage: inIsCons+ex3exp,
     }], 
 	
     ["inst", "PracticeQuestion", {
