@@ -352,9 +352,9 @@ function genInst(){
 	var repeated = "";//"<p> The rule and diagram are repeated below.</p>";
 	
 	var inIsCons = '<div style="width: 40em;">'+defaultEM+isCons+repeated+'</div>';
-	var inNotCons = '<div style="width: 40em;">'+defaultEM+notCons+repeated+'</div>;
-	var coIsCons = defaultCM+isCons+repeated;
-	var coNotCons = defaultCM+notCons+repeated;
+	var inNotCons = '<div style="width: 40em;">'+defaultEM+notCons+repeated+'</div>';
+	var coIsCons = '<div style="width: 40em;">'+defaultCM+isCons+repeated+'</div>';
+	var coNotCons = '<div style="width: 40em;">'+defaultCM+notCons+repeated+'</div>';
 	
 	instItems = [
 	["sep", "SeparatorHTML", {
