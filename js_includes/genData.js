@@ -370,7 +370,7 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 2:</h3>"+frameEx(ex2,ex2img,true),
-        errorMessage: defaultEM+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>, not <span class="q">Middlemarch</span>.</p> ',
+        errorMessage: defaultEM+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>, not <span class="q">Middlemarch</span>.</p> <p>The diagram is therefore inconsistent with the rule. </p> ',
     }], 
 	
 	["inst", "PracticeQuestion", {
