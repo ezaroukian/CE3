@@ -332,18 +332,21 @@ function wrapper(){
 function genInst(){
 
 	
-	defaultEM = '<h2 style="color:red">Incorrect!</h2>';
-	defaultCM = '<h2 style="color:green">Correct!</h2>';
+
 	
 	function frameEx(rule,link,skip){
 		frame = "<div align='center'><p><span class='q'>"+rule+"</span></p><br/><img src='"+link+"' height='360'></div>";
 		if(!skip){ frame += "<br>Is the diagram consistent with the rule?"; }//if not specified, add directions to choose an option.
 		return frame;
 	}
-
+	
+	var defaultEM = '<h2 style="color:red">Incorrect!</h2>';
+	var defaultCM = '<h2 style="color:green">Correct!</h2>';
+	
 	var isCons = "<p align='center'>The diagram IS consistent with the rule.</p><br/>";
-	var notCons = "<p align='center'>The diagram is NOT consistent with the rule.</p><br/>";
-	var repeated = "<p> The rule and diagram are repeated below.</p><br/>";
+	var notCons = "<p align='center'>The diagram is NOT consistent with the rule.</p>";
+	
+	var repeated = "<p> The rule and diagram are repeated below.</p>";
 	
 	var inIsCons = defaultEM+isCons+repeated;
 	var inNotCons = defaultEM+notCons+repeated;
@@ -381,7 +384,8 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 2:</h3>"+frameEx(ex2,ex2img,true),
-        errorMessage: defaultEM+'<p>The diagram is therefore NOT consistent with the rule. </p><p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>, not <span class="q">Middlemarch</span>.</p>',
+		normalMessage: coNotCons,
+        errorMessage: inNotCons+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>, not <span class="q">Middlemarch</span>.</p>',
     }], 
 	
 	["inst", "PracticeQuestion", {
@@ -391,7 +395,8 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 2.5:</h3>"+frameEx(ex25,ex25img,true),
-        errorMessage: defaultEM+'explan',
+		normalMessage: coIsCons,
+        errorMessage: inIsCons+'explan',
     }], 
 	
     ["inst", "PracticeQuestion", {
