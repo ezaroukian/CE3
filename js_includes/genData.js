@@ -340,6 +340,9 @@ function genInst(){
 		return frame;
 	}
 
+	var isCons = "<p align='center'>The diagram is consistent with the rule.</p><br/>"
+	var notCons = "<p align='center'>The diagram is NOT consistent with the rule.</p><br/>"
+	
 	instItems = [
 	["sep", "SeparatorHTML", {
         transfer: "keypress",
@@ -359,7 +362,7 @@ function genInst(){
         html: {include: "2example1.html"},
     }],
 	["inst", "MySeparator", {
-        html: "<p>The diagram is consistent with the rule. </p><h3 align='center'>Example 1:</h3>"+frameEx(ex1,ex1img,true),
+        html: isCons+"<h3 align='center'>Example 1:</h3>"+frameEx(ex1,ex1img,true),
 		errorMessage: defaultEM+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>.</p>',
     }],    
 	
