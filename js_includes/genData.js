@@ -311,7 +311,9 @@ function wrapper(){
 //
 	var ex1 = "the person Mary reads the book Moby-Dick.";
 	var ex1img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
+	var ex1exp = "<div style='width:40em;'><p> In the diagram, <span class='q'>Mary</span> reads <span class='q'>Moby-Dick</span>.</p></div>";
 	var ex2 = "the person Mary reads the book Middlemarch.";
+	var ex2exp = "<div style='width:40em;'><p> In the diagram, <span class='q'>Mary</span> reads <span class='q'>Moby-Dick</span>, not <span class='q'>Middlemarch</span>.</p></div>";
 	var ex2img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
 	var ex3 = "if (the person P1 reads the book B1) then (the person P1 has as name Mary).";
 	var ex3img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1_zpsitpxpxiy.png";
@@ -378,8 +380,8 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
         html: "<h3 align='center'>Example 1:</h3>"+frameEx(ex1,ex1img,true),
-		normalMessage: coIsCons,
-		errorMessage: inIsCons+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>.</p>',
+		normalMessage: coIsCons+ex1exp,
+		errorMessage: inIsCons+ex1exp,
     }],    
 	
     ["inst", "PracticeQuestion", {
@@ -389,8 +391,8 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 2:</h3>"+frameEx(ex2,ex2img,true),
-		normalMessage: coNotCons,
-        errorMessage: inNotCons+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>, not <span class="q">Middlemarch</span>.</p>',
+		normalMessage: coNotCons+ex2exp,
+        errorMessage: inNotCons+ex2exp,
     }], 
 	
 	["inst", "PracticeQuestion", {
@@ -400,7 +402,7 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 2.5:</h3>"+frameEx(ex25,ex25img,true),
-		normalMessage: coIsCons,
+		normalMessage: coIsCons+ex25exp,
         errorMessage: inIsCons+ex25exp,
     }], 
 	
@@ -411,7 +413,7 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 3:</h3>"+frameEx(ex3,ex3img,true),
-		normalMessage: coIsCons,
+		normalMessage: coIsCons+ex3exp,
         errorMessage: inIsCons+ex3exp,
     }], 
 	
@@ -422,7 +424,7 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 4:</h3>"+frameEx(ex4,ex4img,true),
-		normalMessage: coNotCons,
+		normalMessage: coNotCons+ex4exp,
         errorMessage: inNotCons+ex4exp,
     }], 
 	
@@ -433,7 +435,7 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 5:</h3>"+frameEx(ex5,ex5img,true),
-		normalMessage: coNotCons,
+		normalMessage: coNotCons+ex5exp,
         errorMessage: inNotCons+ex5exp,
 
     }],
@@ -445,7 +447,7 @@ function genInst(){
     }],	
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 6:</h3>"+frameEx(ex6,ex6img,true),
-		normalMessage: coIsCons,
+		normalMessage: coIsCons+ex6exp,
         errorMessage: inIsCons+ex6exp,
     }],
 	
