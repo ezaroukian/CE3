@@ -323,8 +323,8 @@ function wrapper(){
 	var ex6 = "if (the person P1 reads the book B1) then (the book B1 has as name Moby-Dick).";
 	var ex6img = "http://i1341.photobucket.com/albums/o753/ezaroukian/3_zpskhezeis8.png";
 	
-	
-	
+	var ex25 = "if (the person P1 has as name John) then (the person P1 reads the book War and Peace).";
+	var ex25img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1jw_zpscr1u8q4m.png";
 	
 function genInst(){
 
@@ -368,6 +368,16 @@ function genInst(){
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 2:</h3>"+frameEx(ex2,ex2img,true),
         errorMessage: defaultEM+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>, not <span class="q">Middlemarch</span>.</p> ',
+    }], 
+	
+	["inst", "PracticeQuestion", {
+        q: "<h3>Example 2.5:</h3>"+frameEx(ex25,ex25img),
+        as: ["Yes","No"], hasCorrect: "Yes",
+        html: {include: "3example25.html"},
+    }],
+	["inst", "MySeparator", {
+		html: "<h3 align='center'>Example 3:</h3>"+frameEx(ex3,ex3img,true),
+        errorMessage: defaultEM+'<p> In the diagram, there is one person-book pair we need to look at. <ol><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, the rule requires <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Consistent</i></li> </ol></p>',
     }], 
 	
     ["inst", "PracticeQuestion", {
