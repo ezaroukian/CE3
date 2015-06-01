@@ -343,8 +343,8 @@ function genInst(){
 	var defaultEM = '<h2 style="color:red">Incorrect!</h2>';
 	var defaultCM = '<h2 style="color:green">Correct!</h2>';
 	
-	var isCons = "<p align='center'>The diagram IS consistent with the rule.</p><br/>";
-	var notCons = "<p align='center'>The diagram is NOT consistent with the rule.</p>";
+	var isCons = "<p>The diagram IS consistent with the rule.</p>";
+	var notCons = "<p>The diagram is NOT consistent with the rule.</p>";
 	
 	var repeated = "<p> The rule and diagram are repeated below.</p>";
 	
@@ -406,7 +406,8 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 3:</h3>"+frameEx(ex3,ex3img,true),
-        errorMessage: defaultEM+'<p> In the diagram, there is one person-book pair we need to look at. <ol><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, the rule requires <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Consistent</i></li> </ol></p>',
+		normalMessage: coIsCons,
+        errorMessage: inIsCons+'<p> In the diagram, there is one person-book pair we need to look at. <ol><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, the rule requires <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Consistent</i></li> </ol></p>',
     }], 
 	
     ["inst", "PracticeQuestion", {
@@ -416,7 +417,8 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 4:</h3>"+frameEx(ex4,ex4img,true),
-        errorMessage: defaultEM+ex4exp,
+		normalMessage: coNotCons,
+        errorMessage: inNotCons+ex4exp,
     }], 
 	
 	["inst", "PracticeQuestion", {
@@ -426,7 +428,8 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 5:</h3>"+frameEx(ex5,ex5img,true),
-        errorMessage: defaultEM+'<p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When <span class="q">P1 = John</span> and <span class="q">B1 = War and Peace</span>, <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Inconsistent!</i></li><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Consistent</i></li> </ol></p><p>Therefore, the diagram is inconsistent with the rule.</p>',
+		normalMessage: coNotCons,
+        errorMessage: inNotCons+'<p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When <span class="q">P1 = John</span> and <span class="q">B1 = War and Peace</span>, <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Inconsistent!</i></li><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Consistent</i></li> </ol></p><p>Therefore, the diagram is inconsistent with the rule.</p>',
 
     }],
 	
@@ -437,7 +440,8 @@ function genInst(){
     }],	
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 6:</h3>"+frameEx(ex6,ex6img,true),
-        errorMessage: defaultEM+'<p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Consistent</i></li> <li>When <span class="q">P1 = John</span> and <span class="q">B1 = Moby-Dick</span>, <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Consistent</i></li></ol></p>><p>Therefore, the diagram is consistent with the rule.</p>',
+		normalMessage: coIsCons,
+        errorMessage: inIsCons+'<p> In the diagram, there are two person-book pairs we need to look at. <ol><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Consistent</i></li> <li>When <span class="q">P1 = John</span> and <span class="q">B1 = Moby-Dick</span>, <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Consistent</i></li></ol></p>><p>Therefore, the diagram is consistent with the rule.</p>',
     }],
 	
     ["inst", "Message", {
