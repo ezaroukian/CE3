@@ -359,7 +359,7 @@ function genInst(){
         html: {include: "2example1.html"},
     }],
 	["inst", "MySeparator", {
-        html: "<h3 align='center'>Example 1:</h3>"+frameEx(ex1,ex1img,true),
+        html: "<p>The diagram is consistent with the rule. </p><h3 align='center'>Example 1:</h3>"+frameEx(ex1,ex1img,true),
 		errorMessage: defaultEM+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>.</p>',
     }],    
 	
@@ -370,7 +370,7 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 2:</h3>"+frameEx(ex2,ex2img,true),
-        errorMessage: defaultEM+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>, not <span class="q">Middlemarch</span>.</p> <p>The diagram is therefore inconsistent with the rule. </p> ',
+        errorMessage: defaultEM+'<p>The diagram is therefore NOT consistent with the rule. </p><p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>, not <span class="q">Middlemarch</span>.</p>',
     }], 
 	
 	["inst", "PracticeQuestion", {
@@ -379,8 +379,8 @@ function genInst(){
         html: {include: "3example25.html"},
     }],
 	["inst", "MySeparator", {
-		html: "<h3 align='center'>Example 3:</h3>"+frameEx(ex3,ex3img,true),
-        errorMessage: defaultEM+'<p> In the diagram, there is one person-book pair we need to look at. <ol><li>When <span class="q">P1 = Mary</span> and <span class="q">B1 = Moby-Dick</span>, the rule requires <span class="q">B1 = Moby-Dick</span>. &ndash; <i>Consistent</i></li> </ol></p>',
+		html: "<h3 align='center'>Example 2.5:</h3>"+frameEx(ex25,ex25img,true),
+        errorMessage: defaultEM+'explan',
     }], 
 	
     ["inst", "PracticeQuestion", {
