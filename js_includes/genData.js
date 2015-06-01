@@ -370,7 +370,7 @@ function genInst(){
     }],
 	["inst", "MySeparator", {
         html: "<h3 align='center'>Example 1:</h3>"+frameEx(ex1,ex1img,true),
-		normalMessage: coIsCons;
+		normalMessage: coIsCons,
 		errorMessage: inIsCons+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>.</p>',
     }],    
 	
