@@ -325,6 +325,9 @@ function wrapper(){
 	
 	var ex25 = "if (the person P1 has as name John) then (the person P1 reads the book War and Peace).";
 	var ex25img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1jw_zpscr1u8q4m.png";
+	var ex26 = ex25;
+	var ex26img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1jwp_zpsqofoc3jw.png";
+	
 	
 function genInst(){
 
