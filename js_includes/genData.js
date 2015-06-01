@@ -333,7 +333,7 @@ function genInst(){
 
 	
 	defaultEM = '<h2 style="color:red">Incorrect!</h2>';
-	defaultCM = '<h2 style="color:green">Incorrect!</h2>';
+	defaultCM = '<h2 style="color:green">Correct!</h2>';
 	
 	function frameEx(rule,link,skip){
 		frame = "<div align='center'><p><span class='q'>"+rule+"</span></p><br/><img src='"+link+"' height='360'></div>";
@@ -369,7 +369,8 @@ function genInst(){
         html: {include: "2example1.html"},
     }],
 	["inst", "MySeparator", {
-        html: coIsCons+"<h3 align='center'>Example 1:</h3>"+frameEx(ex1,ex1img,true),
+        html: "<h3 align='center'>Example 1:</h3>"+frameEx(ex1,ex1img,true),
+		normalMessage: coIsCons;
 		errorMessage: inIsCons+'<p> In the diagram, <span class="q">Mary</span> reads <span class="q">Moby-Dick</span>.</p>',
     }],    
 	
