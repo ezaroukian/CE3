@@ -480,8 +480,7 @@ function genSeq(){
 		"31-x1nx3_u_2B2P_can","33-x1nx3_u_2B2P_can",
 		"11-x3nx1_o_2B2P_isn","31-x3nx1_r_2B2P_dif",
 		"13-3xn1x_o_2P2B_can","33-3xn1x_r_2P2B_dif",
-		"end"
-  		))));
+  		))),"end");
   
 	var idc = seq("inst",sepWith("sep",rshuffle(rshuffle(
 		"11-11n13_o_2B_isn","13-11n13_o_2B_isn","31-11n13_r_2B_dif","33-11n13_r_2B_dif",
@@ -492,8 +491,7 @@ function genSeq(){
 		"31-x1nx3_u_2B2P_isn","33-x1nx3_u_2B2P_isn",
 		"11-x3nx1_o_2B2P_dif","31-x3nx1_r_2B2P_can",
 		"13-3xn1x_o_2P2B_isn","33-3xn1x_r_2P2B_can",
-		"end"
-		))));
+		))),"end");
   
     	var dci = seq("inst",sepWith("sep",rshuffle(rshuffle(
 		"11-11n13_o_2B_dif","13-11n13_o_2B_dif","31-11n13_r_2B_can","33-11n13_r_2B_can",
@@ -504,8 +502,7 @@ function genSeq(){
 		"31-x1nx3_u_2B2P_dif","33-x1nx3_u_2B2P_dif",
 		"11-x3nx1_o_2B2P_can","31-x3nx1_r_2B2P_isn",
 		"13-3xn1x_o_2P2B_dif","33-3xn1x_r_2P2B_isn",
-		"end"
-   		))));
+   		))),"end");
    
 	var newOrd = Math.floor((Math.random() * 3)); 
 	//alert(newOrd);
