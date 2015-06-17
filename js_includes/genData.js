@@ -328,9 +328,9 @@ function wrapper(){
 	var ex7img = "http://i1341.photobucket.com/albums/o753/ezaroukian/3_zpskhezeis8.png";
 	var ex7exp = "<div style='width:40em;'><p> To determine if the diagram is consistent with this rule, we need to find the cases in the diagram where the 'if'-clause is true, then check whether the 'then'-clause is true. </p> <ul>	<li>		IF: The 'if'-clause is true when		<ol>			<li><span class='q'>P1=John</span> and <span class='q'>B1=Moby-Dick</span> (<span class='q'>the person John reads the book Moby-Dick</span>), and when 			</li>			<li><span class='q'>P1=Mary</span> and <span class='q'>B1=Moby-Dick</span> (<span class='q'>the person Mary reads the book Moby-Dick</span>)	</li>		</ol>	</li>	<li>		THEN:		<ol>			<li>When <span class='q'>P1=John</span> and <span class='q'>B1=Moby-Dick</span>, the 'then'-clause (<span class='q'>the book Moby-Dick has as name Moby-Dick</span>) is true 			</li>			<li>When <span class='q'>P1=Mary</span> and <span class='q'>B1=Moby-Dick</span>, the 'then'-clause (<span class='q'>the book Moby-Dick has as name Moby-Dick</span>) is true 			</li>		</ol>	</li> </ul></div>";
 	
-	var ex3 = "if (the person P1 has as name John) then (the person P1 reads the book War and Peace).";
-	var ex3img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1jw_zpscr1u8q4m.png";
-	var ex3exp = "<div style='width:40em;'><p> To determine if the diagram is consistent with this rule, we need to find the cases in the diagram where the 'if'-clause is true, then check whether the 'then'-clause is true. </p> <ul><li>	IF: The 'if'-clause is true when <span class='q'>P1=John</span> (<span class='q'>the person John has as name John</span>)</li>	<li>THEN: When <span class='q'>P1=John</span>, the 'then'-clause (<span class='q'>the person John reads the book War and Peace</span>) is true </li> </ul></div>";
+	var ex3 = "if (the person P1 has as name Peter) then (the person P1 reads the book War and Peace).";
+	var ex3img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1pwp_zpshplc6owi.png";
+	var ex3exp = "<div style='width:40em;'><p> To determine if the diagram is consistent with this rule, we need to find the cases in the diagram where the 'if'-clause is true, then check whether the 'then'-clause is true. </p> <ul><li>	IF: The 'if'-clause is true when <span class='q'>P1=Peter</span> (<span class='q'>the person Peter has as name Peter</span>)</li>	<li>THEN: When <span class='q'>P1=John</span>, the 'then'-clause (<span class='q'>the person Peter reads the book War and Peace</span>) is true </li> </ul></div>";
 	var ex26 = ex25;
 	var ex26img = "http://i1341.photobucket.com/albums/o753/ezaroukian/1jwp_zpsqofoc3jw.png";
 	var ex26exp = "<div style='width:40em;'><p>To determine if the diagram is consistent with this rule, we need to find the cases where the 'if'-clause is true, then check whether the 'then'-clause is true. </p> <ul>	<li>The 'if'-clause is true when <span class='q'>P1=John</span>. (When <span class='q'>P1=Mary</span> or <span class='q'>P1=Peter</span>, the 'if'-clause is false, since neither has the name <span class='q'John</span>)	</li>	<li> When <span class='q'>P1=John</span>, the 'then'-clause (<span class='q'>John reads War and Peace</span>) is true </li> </ul></div>";
@@ -398,7 +398,7 @@ function genInst(){
 	["inst", "PracticeQuestion", {
         q: "<h3>Example 3:</h3>"+frameEx(ex3,ex3img),
         as: ["Yes","No"], hasCorrect: "Yes",
-        html: {include: "4example3.html"},
+        html: {include: "4example3.html"},//http://i1341.photobucket.com/albums/o753/ezaroukian/1pwp_zpshplc6owi.png
     }],
 	["inst", "MySeparator", {
 		html: "<h3 align='center'>Example 3:</h3>"+frameEx(ex3,ex3img,true),
