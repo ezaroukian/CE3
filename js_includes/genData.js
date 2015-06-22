@@ -287,7 +287,7 @@ function ibexItem(onto,CErule){
 	}
 	////testing
 	//alert(quest);
-	return [ [type, "Question", {"q": quest, "as": ans, "hasCorrect": cor } ] ];
+	return [ [type, "Question", {"q": "<span class='q'>"+quest+"</span>", "as": ans, "hasCorrect": cor } ] ];
 }
 
 function ibexItemsList(ontoList,CErulesList){
@@ -338,7 +338,6 @@ function wrapper(){
 	
 function genInst(){
 
-	
 
 	
 	function frameEx(rule,link,skip){
