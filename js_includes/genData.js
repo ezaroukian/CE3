@@ -456,6 +456,7 @@ function genInst(){
 	["end", "Form", {
         html: { include: "endSurvey.html" },
     } ],
+	["end", "__SendResults__", { }],
 	["end", "Message", {
         html: { include: "code.html" },
     } ],

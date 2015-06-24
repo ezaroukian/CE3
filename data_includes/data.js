@@ -1,6 +1,6 @@
 //genData.js makes all the test/filler items that are added via genWrapper()
 //var manualSendResults = true;
-var manualSendResults = false;
+var manualSendResults = true;
 var shuffleSequence = genSeq();
 
 var defaults = [
