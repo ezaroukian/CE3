@@ -459,6 +459,7 @@ function genInst(){
 	["end", "__SendResults__", { }],
 	["end", "Message", {
         html: { include: "code.html" },
+		transfer: null,
     } ],
 	];
 	
